@@ -90,7 +90,7 @@ color: #ECECEC;
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
   
   .arrow {
     position: absolute;

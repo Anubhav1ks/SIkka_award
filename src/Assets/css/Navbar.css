@@ -149,7 +149,7 @@ border-radius: 50px !important;
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)  and (min-width: 1440px){
 
 .headding {
   margin-top: 24px;

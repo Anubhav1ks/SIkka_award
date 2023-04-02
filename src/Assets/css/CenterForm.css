@@ -241,7 +241,7 @@ flex-grow: 0;
 
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-width: 1440px) {
   .brand-logo {
     margin-left: 29px;
     position: relative;
@@ -265,7 +265,7 @@ flex-grow: 0;
 }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-width: 1024px) {
 
   
 .form-container input[type="text"], .form-container input[type="email"], .form-container input[type="tel"], .form-container input[type="password"], .form-container input[type="file"] {
