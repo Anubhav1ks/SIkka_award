@@ -15,10 +15,8 @@ function MyForm() {
     const [birthYear, setBirthYear] = useState('');
     const [researchPaper, setResearchPaper] = useState(null);
     const [filename, setfilename] = useState("")
-    const [loading, setloading] = useState(false)
-
+    const [loading,setloading]=useState(false)
     const form = new FormData();
-
     const handleSubmit = async (event) => {
         event.preventDefault();
         setloading(true)
@@ -31,12 +29,10 @@ function MyForm() {
         form.append("myfile", researchPaper)
         console.log("hello");
         await SUBMITFORM(form).then((res) => {
+        setloading(false)
             handleOpen()
-            setloading(false)
-        }).catch((err) => {
-            console.log(err);
-            setloading(false)
-        })
+        }).catch((err) => console.log(err))
+        setloading(false)
 
         // handle form submission
     };
@@ -87,7 +83,7 @@ function MyForm() {
                     <div >
                         <label>Password:</label>
                         <input
-                            placeholder='Password'
+                        placeholder='Password'
                             type="password"
                             value={password}
                             onChange={(event) => setPassword(event.target.value)}
@@ -96,7 +92,7 @@ function MyForm() {
                     <div>
                         <label>Repeat Password:</label>
                         <input
-                            placeholder='Repeat Password'
+                        placeholder='Repeat Password'
 
                             type="password"
                             value={repeatPassword}
@@ -108,7 +104,7 @@ function MyForm() {
                 <div>
                     <label>Mobile Number:</label>
                     <input
-                        placeholder='Mobile Number'
+                    placeholder='Mobile Number'
                         type="tel"
                         value={mobileNumber}
                         onChange={(event) => setMobileNumber(event.target.value)}
@@ -170,6 +166,7 @@ function MyForm() {
                     }
 
                 </div>
+                
             </form>
 
             <Popup open={open} handleClose={handleClose} />
