@@ -1,0 +1,95 @@
+
+
+.four-container{
+    background-color: #fff;
+}
+.four-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.four-heading span{
+    /* font-family: 'Roboto'; */
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #111111;
+width: 106px;
+height: 47px;
+
+margin-top: 80px;
+}
+
+
+/* card */
+
+.jury-card{
+    
+    margin-bottom: 90px;
+    line-height: 3;
+    padding: 20px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 452px;
+height: 395px;
+    background: #FFFFFF;
+box-shadow: 0px 0px 30px rgba(233, 233, 233, 0.65);
+border-radius: 20px;
+margin-right: 20px;
+margin-top: 20px;
+}
+.jury-card span{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+/* Black */
+color: #111111;
+width: 133px;
+height: 23px;
+}
+.jury-card p{
+    width: 412px;
+height: 144px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* Black */
+
+color: #111111;
+}
+.jury-card a{
+    width: 77px;
+height: 24px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-decoration-line: underline !important;
+color: #CBAA5D !important;
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+.jury-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

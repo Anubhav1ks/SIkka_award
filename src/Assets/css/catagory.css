@@ -1,0 +1,81 @@
+.categories-div{
+    margin-top: 90px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 70px;
+}
+.categories-div .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.categories-div .heading span{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #CBAA5D;
+}
+.card-div .div-cat-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Card-categories {
+    padding: 20px;
+    box-sizing: border-box;
+margin-bottom: 20px;
+    width: 357px;
+    height: 390px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Black */
+    
+    background: #111111;
+    border: 1px solid #333333;
+    box-shadow: 0px 0px 30px #000000;
+    border-radius: 20px;
+}
+.Card-categories span {
+    width: 184px;
+    height: 23px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    /* White */
+    
+    color: #ECECEC;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Card-categories p{
+    width: 317px;
+height: 216px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #ECECEC;
+flex: none;
+order: 1;
+flex-grow: 0;
+}

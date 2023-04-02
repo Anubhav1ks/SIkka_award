@@ -1,0 +1,46 @@
+.rec-main{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 90px;
+}
+
+.rec-main .heading{
+    padding-top: 70px;
+    /* font-family: 'Roboto'; */
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 120%;
+/* or 48px */
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+/* Black */
+
+color: #111111;
+}
+
+.rec-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-rec{
+    width: 50%;
+}
+.div-rec p{
+    text-align: left;
+}
+.div-rec {
+    margin-top: 30px;
+  position: relative;
+}
+
+.div-rec img:first-child {
+    position: absolute;
+    top: -26px;
+    left: 110px;
+}

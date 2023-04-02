@@ -1,0 +1,150 @@
+.How-container{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.HOW-Heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 51px;
+}
+.HOW-Heading span{
+height: 47px;
+margin-top: 100px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+/* Gold */
+
+color: #CBAA5D;
+}
+
+
+
+/* process */
+
+.how-process{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.how-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+flex-direction: column;
+padding: 0px;
+gap: 20px;
+width: 278px;
+height: 261px;
+  }
+  
+.how-card span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 19px;
+    line-height: 150%;
+    text-align: center;
+    color: #ECECEC;
+
+}
+
+.main-hr-1{
+    /* width: 1352px; */
+  margin-left: 80px;
+    height: 0px;
+    margin-right: 80px;
+  border: 0.5px solid #CBAA5D;
+  
+  }
+  .starthr{
+    position: absolute;
+    left: 29px;
+  }
+  .hr-with-image-1 {
+    margin-top: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 33%;
+    width: 438px;
+    height: 0px;
+  border: 1px solid #CBAA5D;
+  }
+  
+  .hr-with-image-1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: url("../images/Starhr.svg");
+    background-repeat: repeat-x;
+    transform: translateY(-50%);
+  }
+  
+
+
+  /* RULES AND REWARDS */
+
+  .rule-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 105px;
+  }
+  .div-1{
+    width: 50%;
+  }
+  .rule-center .heading{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    /* Gold */
+    
+    color: #CBAA5D;
+  }
+  .rule-center ul li {
+    /* font-family: 'Roboto'; */
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ECECEC;
+  }
+
+  .div-1 {
+    margin-top: 70px;
+    margin-bottom: 105px;
+    position: relative;
+  }
+  .awardpic{
+    left: 37%;
+    z-index: 9999999;
+  }
+  .div-1 img {
+    position: absolute !important;
+    /* top: 8%; */
+    right: 0%;
+    transform: translate(-50%, -50%);
+  }

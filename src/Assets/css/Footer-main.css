@@ -1,0 +1,79 @@
+
+
+
+
+
+/* Navbar CSS */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 49px;
+}
+
+.navlogo {
+  height: 74px;
+  width: 131.55555725097656px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links li {
+  display: inline-block;
+  margin-right: 80px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ececec;
+}
+.arrow{
+  position: absolute;
+  top: -91px;
+  right: -160px;
+}
+.nav-links li.last {
+  margin-right: 0; /* Remove margin-right from the last li element */
+}
+.nav-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 30px;
+  gap: 10px;
+  width: 135px;
+  color: black !important;
+  height: 40px;
+  background: #cbaa5d !important;
+  border-radius: 50px !important;
+}
+.footer-main{
+height: 217px;
+}
+.footer-main span{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 23px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.02em;
+margin-top: 35px;
+margin-bottom: 50px;
+color: #ECECEC;
+}
