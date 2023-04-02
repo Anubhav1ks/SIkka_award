@@ -1,40 +1,131 @@
-.categories-div{
-    margin-top: 90px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 70px;
+.categories-div {
+  margin-top: 90px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 70px;
 }
-.categories-div .heading{
-    margin-bottom: 50px;
-    text-align: center;
+.categories-div .heading {
+  margin-bottom: 50px;
+  text-align: center;
 }
-.categories-div .heading span{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 47px;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: #CBAA5D;
+.categories-div .heading span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #cbaa5d;
 }
-.card-div .div-cat-1{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.card-div .div-cat-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .Card-categories {
-    padding: 20px;
-    box-sizing: border-box;
-margin-bottom: 20px;
-    width: 357px;
-    height: 390px;
+  margin-right: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 357px;
+  height: 390px;
 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Black */
+
+  background: #111111;
+  border: 1px solid #333333;
+  box-shadow: 0px 0px 30px #000000;
+  border-radius: 20px;
+}
+.Card-categories span {
+  width: 184px;
+  height: 23px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ececec;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Card-categories p {
+  width: 317px;
+  height: 216px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ececec;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+.Card-categories {
+    margin-right: 12px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 13px;
+    width: 315px;
+    height: 357px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* Black */
-    
+    background: #111111;
+    border: 1px solid #333333;
+    box-shadow: 0px 0px 30px #000000;
+    border-radius: 20px;
+}
+.Card-categories p {
+    width: 290px;
+    height: 205px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 149%;
+    text-align: center;
+    color: #ececec;
+}
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+.Card-categories {
+    margin-right: 11px;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    width: 257px;
+    height: 362px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: #111111;
     border: 1px solid #333333;
     box-shadow: 0px 0px 30px #000000;
@@ -43,39 +134,27 @@ margin-bottom: 20px;
 .Card-categories span {
     width: 184px;
     height: 23px;
-    
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
-    /* White */
-    
-    color: #ECECEC;
-    
-    
-    /* Inside auto layout */
-    
+    color: #ececec;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
-
-.Card-categories p{
-    width: 317px;
-height: 216px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
-color: #ECECEC;
-flex: none;
-order: 1;
-flex-grow: 0;
+.Card-categories p {
+    width: 235px;
+    /* height: 179px; */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 144%;
+    text-align: center;
+    color: #ececec
+}
 }

@@ -2,7 +2,6 @@
 import "../../Assets/css/Footer-main.css"
 import arrow from "../../Assets/images/footerarrow.png"
 import navlogo from "../../Assets/images/nav-logo.png"
-import Button from '@mui/material/Button';
 
 const FooterMain=()=>{
 

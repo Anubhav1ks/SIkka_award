@@ -38,7 +38,7 @@ const Centerpage = () => {
          </div>
                 </div>
                 <div className="brand-logo">
-                <img src={logo1} alt="Logo" />
+                <img src={logo1} alt="Logo" className="bird"/>
                 <img src={circle2} className="ecclips" alt="Logo" />
                 
                 </div>

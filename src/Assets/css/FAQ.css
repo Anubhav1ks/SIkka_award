@@ -143,3 +143,36 @@ height: 0px;
 border: 1px solid #ECECEC;
   }
   
+
+
+@media screen and (min-width: 1024px) {
+  
+.faqs {
+  width: 76%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 15px;
+}
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+.App {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.faqs {
+  width: 50%;
+  /* max-width: 0px; */
+  margin: 0px;
+  padding: 0;;
+}
+
+
+.faqs-container {
+    display: flex;
+    justify-content: space-between;
+}
+}

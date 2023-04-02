@@ -39,7 +39,7 @@
 .arrow{
   position: absolute;
   top: -91px;
-  right: -160px;
+  right: 0px;
 }
 .nav-links li.last {
   margin-right: 0; /* Remove margin-right from the last li element */
@@ -77,3 +77,26 @@ margin-top: 35px;
 margin-bottom: 50px;
 color: #ECECEC;
 }
+
+
+
+
+@media screen and (min-width: 2560px) {
+  .arrow {
+    position: absolute;
+    top: -91px;
+    right: 88px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  .arrow {
+    position: absolute;
+    top: -60px;
+    height: 131px;
+    right: 0px;
+}
+}
+

@@ -44,3 +44,36 @@ color: #111111;
     top: -26px;
     left: 110px;
 }
+
+
+@media screen and (min-width: 1440px) {
+    .div-rec img:first-child {
+        position: absolute;
+        top: -26px;
+        left: 50px;
+    }
+  }
+
+
+@media screen and (min-width: 768px) {
+  
+.rec-main {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 90px;
+}
+.div-rec img:first-child {
+    position: absolute;
+    top: -10px;
+    left: 8px;
+}
+
+.rec-main .heading {
+    padding-top: 63px;
+    /* font-family: 'Roboto'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+}
+}

@@ -5,7 +5,6 @@ export const BASE_URL = "https://himashusirapi-production.up.railway.app"; //dev
 
 
 axios.defaults.baseURL = BASE_URL;
-const token = localStorage.getItem("token");
 
 
 export async function SUBMITFORM(data) {

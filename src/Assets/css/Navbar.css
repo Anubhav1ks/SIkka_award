@@ -147,3 +147,27 @@ border: 2px solid white !important;
 height: 40px;
 border-radius: 50px !important;
 }
+
+
+@media screen and (min-width: 768px) {
+
+.headding {
+  margin-top: 24px;
+}
+.headding .heading-1 {
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 148%;
+  letter-spacing: 0.04em;
+}
+.headding .heading-2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 48px;
+}
+  .display {
+    display: none !important;
+  }
+
+}

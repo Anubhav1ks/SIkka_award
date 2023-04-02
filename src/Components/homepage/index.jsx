@@ -24,7 +24,7 @@ const Home = () => {
         <>
            <nav className="navbar">
                <div>
-                    <img src={navlogo} className="navlogo"/>
+                    <img src={navlogo} alt="not found" className="navlogo"/>
                </div>
                <div>
                    <ul className="nav-links"> {/* Add a class name to ul */}

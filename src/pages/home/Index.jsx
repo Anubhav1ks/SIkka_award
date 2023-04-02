@@ -11,17 +11,17 @@ const HOMEPAGE = () => {
   return (
     <>
       <div className="main-container">
-        <div className="background-img">
-          <Home />
-          <div>
-            <Centerpage />
-          </div>
+      <div className="background-img">
+      <Home />
+        <div>
+        <Centerpage />
+      </div>
 
-          <div className="hr-with-image-1">
-            <hr className="main-hr-1" />
-            <img src={Starhr} className="starthr" alt="start" />
-          </div>
-          <Categories />
+        <div className="hr-with-image-1">
+                    <hr className="main-hr-1" />
+                    <img src={Starhr} className="starthr" alt="start" />
+                </div>
+        <Categories />
 
         </div>
 
