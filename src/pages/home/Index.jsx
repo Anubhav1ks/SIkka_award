@@ -36,7 +36,6 @@ const HOMEPAGE = () => {
             <hr className="main-hr" />
             <img src={Starhr} className="starthr" alt="start" />
           </div>
-          {/* </hr> */}
           <FAQmain />
         </div>
         <FooterMain />

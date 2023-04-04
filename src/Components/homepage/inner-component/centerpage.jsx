@@ -5,43 +5,43 @@ import { Button } from "@mui/material"
 import { useNavigate } from "react-router-dom";
 
 const Centerpage = () => {
-        const navigate=useNavigate()
-    const handleRegister=()=>{
+    const navigate = useNavigate()
+    const handleRegister = () => {
         navigate("/register");
     }
 
-    return(
+    return (
 
         <>
             <div className="CenterForm">
                 <div>
-                <div className="outer-div">
-            <p className="memory-text">
-            In the loving memory of Mr. Dev Raj Sikka, Skymet presents the
-            </p>
+                    <div className="outer-div">
+                        <p className="memory-text">
+                            In the loving memory of Mr. Dev Raj Sikka, Skymet presents the
+                        </p>
 
-            <p className="annual-skymet">
-                ANNUAL SKYMET 
-            </p>
-             <br />
-            <p className="annual-skymet2">
-                SIKKA AWARD 2023
-            </p>
+                        <p className="annual-skymet">
+                            ANNUAL SKYMET
+                        </p>
+                        <br />
+                        <p className="annual-skymet2">
+                            SIKKA AWARD 2023
+                        </p>
 
-            <div className="win-trophydiv">
-            <p className="win-trophy">
-            The Sikka Meteorology Award 2023, presented by 
-            Skymet Weather, is a prestigious recognition honouring the 
-            legacy of Mr. Dev Raj Sikka. Register
-             now and stand a chance to win the trophy and Rs. 1,00,000/-
-            </p>
-            </div>
-            <div>
-                   <Button className="nav-button" onClick={handleRegister}>REGISTER</Button>
-                   <Button className="nav-button-1">LEARN MORE</Button>
+                        <div className="win-trophydiv">
+                            <p className="win-trophy">
+                                The Sikka Meteorology Award 2023, presented by
+                                Skymet Weather, is a prestigious recognition honouring the
+                                legacy of Mr. Dev Raj Sikka. Register
+                                now and stand a chance to win the trophy and Rs. 1,00,000/-
+                            </p>
+                        </div>
+                        <div>
+                            <Button className="nav-button" onClick={handleRegister}>REGISTER</Button>
+                            <Button className="nav-button-1">LEARN MORE</Button>
 
-               </div>
-         </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="brand-logo">
                 <img src={logo1} alt="Logo" className="bird"/>
@@ -50,7 +50,7 @@ const Centerpage = () => {
                 </div>
             </div>
         </>
-        
+
 
     )
 }
