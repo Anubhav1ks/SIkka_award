@@ -16,10 +16,14 @@ function MyForm() {
     const [researchPaper, setResearchPaper] = useState(null);
     const [filename, setfilename] = useState("")
     const [loading,setloading]=useState(false)
+    const [isSuccess, setIsSuccess] = useState(false);
     const form = new FormData();
     const handleSubmit = async (event) => {
         event.preventDefault();
         setloading(true)
+        validateSelectedFile()
+        if(isSuccess){
+
         form.append("firstname", firstName)
         form.append("lastname", lastName)
         form.append("email", email)
@@ -32,6 +36,10 @@ function MyForm() {
         setloading(false)
             handleOpen()
         }).catch((err) => console.log(err))
+
+    }
+
+
         setloading(false)
 
         // handle form submission
@@ -40,6 +48,38 @@ function MyForm() {
         document.getElementById('fileInput').click();
 
     };
+
+    const validateSelectedFile = () => {
+        const MIN_FILE_SIZE = 0 // 1MB
+        const MAX_FILE_SIZE = 5120 // 5MB
+    
+        if (!researchPaper) {
+          alert("Please choose a file");
+          setResearchPaper(null)
+          setIsSuccess(false)
+          return
+        }
+    
+        const fileSizeKiloBytes = researchPaper.size / 1024
+    
+        if(fileSizeKiloBytes < MIN_FILE_SIZE){
+          alert("File size is less than minimum limit");
+          setResearchPaper(null)
+          setIsSuccess(false)
+          return
+        }
+        if(fileSizeKiloBytes > MAX_FILE_SIZE){
+          alert("File size is greater than maximum limit");
+          setResearchPaper(null)
+          setIsSuccess(false)
+          return
+        }
+    
+        // ("")
+        setIsSuccess(true)
+      };
+    
+
 
     const handleFileChange = (event) => {
         setfilename(event.target.files[0].name);
