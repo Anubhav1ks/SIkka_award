@@ -45,9 +45,15 @@ color: #111111;
     left: 110px;
 }
 
+@media screen and (min-width: 1440px) and (max-width: 1690px) {
+    .div-rec img:first-child {
+        position: absolute;
+        top: -26px;
+        left: 50px;
+    }
+  }
 
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px)   and (max-width: 1690px) {
   
     .rec-main {
         text-align: center;
@@ -63,18 +69,11 @@ color: #111111;
     
     .rec-main .heading {
         padding-top: 63px;
-        /* font-family: 'Roboto'; */
         font-style: normal;
         font-weight: 600;
         font-size: 32px;
     }
     }
 
-@media screen and (min-width: 1440px) and (min-width: 2560px) {
-    .div-rec img:first-child {
-        position: absolute;
-        top: -26px;
-        left: 50px;
-    }
-  }
+
 
