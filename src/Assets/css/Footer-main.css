@@ -99,4 +99,11 @@ color: #ECECEC;
     right: 0px;
 }
 }
+@media screen and (max-width: 425px)   and (max-width: 1690px){
 
+
+.nav-links {
+  display: none;
+}
+
+}

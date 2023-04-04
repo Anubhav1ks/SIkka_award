@@ -313,3 +313,42 @@ flex-grow: 0;
   border-radius: 40px;
 }
 }
+
+
+@media screen and (max-width: 425px) and (max-width: 1690px) {
+
+.CenterForm {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.memory-text {
+  margin-top: 75px !important;
+}
+.bird{
+  height: 16rem;
+}
+.win-trophydiv {
+  width: 100% !important;
+}
+.annual-skymet, .annual-skymet2 {
+  font-weight: 600 !important;
+  font-size: 38px !important;
+  line-height: 12px !important;
+}
+.brand-logo {
+  margin-left: 13%;
+  margin-top: 7%;
+  position: relative;
+}
+.ecclips{
+  bottom: -46px;
+  right: 22px;
+  box-sizing: border-box;
+  width: auto;
+  height: 108px;
+}
+}

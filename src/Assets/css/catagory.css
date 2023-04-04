@@ -8,6 +8,10 @@
   margin-bottom: 50px;
   text-align: center;
 }
+#carouselExampleIndicators{
+  display: none;
+}
+
 .categories-div .heading span {
   font-family: "Roboto";
   font-style: normal;
@@ -155,5 +159,25 @@
     line-height: 144%;
     text-align: center;
     color: #ececec
+}
+#carouselExampleIndicators{
+  display: none !important;
+}
+  .card-div{
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 425px) and (max-width: 1690px) {
+#carouselExampleIndicators{
+  display: block ;
+}
+  .card-div{
+    display: none;
+  }
+.categories-div {
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 }

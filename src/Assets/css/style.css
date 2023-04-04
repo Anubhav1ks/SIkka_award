@@ -190,3 +190,12 @@
     margin-left: 20px;
 }
 }
+
+@media screen and (max-width: 425px)  and (max-width: 1690px){
+
+  .display{
+    display: none !important;
+  }
+
+
+}

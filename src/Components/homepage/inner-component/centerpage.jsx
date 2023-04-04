@@ -2,8 +2,14 @@ import logo1 from "../../../Assets/images/logo-1.svg"
 import "../../../Assets/css/CenterForm.css"
 import circle2 from "../../../Assets/images/gp-1.png"
 import { Button } from "@mui/material"
+import { useNavigate } from "react-router-dom";
 
 const Centerpage = () => {
+        const navigate=useNavigate()
+    const handleRegister=()=>{
+        navigate("/register");
+    }
+
     return(
 
         <>
@@ -31,7 +37,7 @@ const Centerpage = () => {
             </p>
             </div>
             <div>
-                   <Button className="nav-button">REGISTER</Button>
+                   <Button className="nav-button" onClick={handleRegister}>REGISTER</Button>
                    <Button className="nav-button-1">LEARN MORE</Button>
 
                </div>

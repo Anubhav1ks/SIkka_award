@@ -76,4 +76,27 @@ color: #111111;
     }
 
 
+    @media screen and (max-width: 425px)   and (max-width: 1690px) {
 
+    .rec-main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .rec-center {
+        display: block;
+    }
+    .rec-main .heading {
+      font-weight: 600;
+        font-size: 27px;
+        line-height: 113%;
+    }
+    .div-rec {
+        width: 100%;
+    }
+    .div-rec img:first-child {
+        position: absolute;
+        top: -13px;
+        left: 19px;
+    }
+    
+}

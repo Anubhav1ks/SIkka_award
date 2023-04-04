@@ -167,3 +167,52 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media screen and (max-width: 425px) and (max-width: 1690px){
+
+
+.hr-with-image-1 {
+  margin-top: 90px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 18%;
+  width: 270px;
+  height: 0px;
+  border: 1px solid #cbaa5d;
+}
+
+.How-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.HOW-Heading span {
+  font-size: 30px;
+}
+
+.how-card img{
+  width: auto;
+  height: 100px;
+}
+
+.rule-center {
+    display: block;
+}
+.div-1 {
+  height: 28rem;
+  margin-bottom: 0 !important;
+  width: 100%;
+
+}
+.div-1 img {
+  position: absolute !important;
+  top: 52%;
+  right: -17%;
+  transform: translate(-50%, -50%);
+}
+.awardpic {
+  left: 48%;
+}
+}
