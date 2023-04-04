@@ -116,7 +116,7 @@ flex-grow: 0;
 }
 
 
-@media screen and (max-width: 425px)  and (max-width: 1690px) {
+@media screen and (max-width: 550px)  and (max-width: 1690px) {
 
 .jury-container{
     display: none;

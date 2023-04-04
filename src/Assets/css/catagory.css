@@ -174,22 +174,74 @@
   }
 }
 
-@media screen and (max-width: 425px) and (max-width: 1690px) {
-.Card-categories {
-  margin-right: 14px;
-  padding: 15px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  width: 315px;
-  height: 390px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #111111;
-  border: 1px solid #333333;
-  box-shadow: 0px 0px 30px #000000;
-  border-radius: 20px;
-  margin-left: 15px;
+
+@media screen and (max-width: 768px) and (max-width: 1690px) {
+
+  .Card-categories {
+      margin-right: 11px;
+      padding: 2px;
+      box-sizing: border-box;
+      margin-bottom: 22px;
+      width: 257px;
+      height: 362px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #111111;
+      border: 1px solid #333333;
+      box-shadow: 0px 0px 30px #000000;
+      border-radius: 20px;
+  }
+  .Card-categories span {
+      width: 184px;
+      height: 23px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 15px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #ececec;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+  }
+  .Card-categories p {
+      width: 235px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 100;
+      font-size: 15px;
+      line-height: 144%;
+      text-align: center;
+      color: #ececec
+  }
+
+  }
+
+
+
+  
+  
+
+
+@media screen and (max-width: 550px) and (max-width: 1690px) {
+  .Card-categories {
+    margin-right: 15%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 315px;
+    height: 390px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #111111;
+    border: 1px solid #333333;
+    box-shadow: 0px 0px 30px #000000;
+    border-radius: 20px;
+    margin-left: 17%;
 }
   #carouselExampleIndicators{
   display: block ;

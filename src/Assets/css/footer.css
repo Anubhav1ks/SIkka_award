@@ -17,3 +17,20 @@ line-height: 23px;
 letter-spacing: 0.02em;
 color: #111111;
 }
+
+@media screen and (max-width: 425px)  and (max-width: 1690px){
+
+
+.footer span {
+    width: 587px;
+    height: -1px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0px;
+    letter-spacing: 0.02em;
+    color: #111111;
+}
+
+}
