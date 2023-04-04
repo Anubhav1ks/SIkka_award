@@ -117,7 +117,26 @@ flex-grow: 0;
 
 
 @media screen and (max-width: 550px)  and (max-width: 1690px) {
-
+.jury-card p {
+width: 100%;
+/* margin: 2%; */
+}
+.jury-card {
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px hsla(0,0%,91%,.65);
+    height: 395px;
+    justify-content: center;
+    line-height: 3;
+    margin-bottom: 90px;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-left: 2%;
+    padding: 20px;
+    text-align: center;
+    width: 373px;
+}
 .jury-container{
     display: none;
 }

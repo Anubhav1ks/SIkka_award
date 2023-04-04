@@ -123,7 +123,7 @@ color: #111111;
     
 }
 
-@media screen and (max-width: 376px)   and (max-width: 1690px) {
+@media screen and (max-width: 391px)   and (max-width: 1690px) {
 
 
 .div-rec img:first-child {
@@ -133,6 +133,6 @@ color: #111111;
     width: 95%;
 }
 .div-rec img {
-    width: 95%;
+    width: 95% !important;
 }
 }
