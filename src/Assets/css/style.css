@@ -189,13 +189,12 @@
 .outer-div{
     margin-left: 20px;
 }
+
 }
 
 @media screen and (max-width: 550px)  and (max-width: 1690px){
 
-  .display{
-    display: none !important;
-  }
+
   .annual-skymet, .annual-skymet2 {
     width: 100%;
   }

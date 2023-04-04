@@ -166,9 +166,13 @@ border-radius: 50px !important;
   font-size: 38px;
   line-height: 48px;
 }
-  .display {
-    display: none !important;
-  }
 
 }
 
+@media screen and (max-width: 846px) and (max-width: 1690px) {
+
+
+.display{
+  display: none !important;
+}
+}
