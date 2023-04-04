@@ -13,7 +13,7 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
       <div className="faq-question">{faq.question}</div>
       <div className="faq-answer">{faq.answer}</div>
     </div>
-    <hr className="FAQ-hr"/>
+
     </>
   );
 };
