@@ -197,7 +197,7 @@
     display: none !important;
   }
   .annual-skymet, .annual-skymet2 {
-    width: 398px;
+    width: 100%;
   }
 
 }

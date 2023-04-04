@@ -100,3 +100,17 @@ color: #111111;
     }
     
 }
+
+@media screen and (max-width: 376px)   and (max-width: 1690px) {
+
+
+.div-rec img:first-child {
+    position: absolute;
+    top: -13px;
+    left: 19px;
+    width: 95%;
+}
+.div-rec img {
+    width: 95%;
+}
+}

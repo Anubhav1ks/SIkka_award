@@ -11,6 +11,9 @@
 #carouselExampleIndicators{
   display: none;
 }
+#carouselExampleIndicators1{
+  display: none;
+}
 
 .categories-div .heading span {
   font-family: "Roboto";
@@ -69,7 +72,7 @@
 }
 
 .Card-categories p {
-  width: 317px;
+  /* width: 317px; */
   height: 216px;
 
   font-family: "Roboto";
@@ -163,13 +166,35 @@
 #carouselExampleIndicators{
   display: none !important;
 }
+#carouselExampleIndicators1{
+  display: none !important;
+}
   .card-div{
     display: block !important;
   }
 }
 
 @media screen and (max-width: 425px) and (max-width: 1690px) {
-#carouselExampleIndicators{
+.Card-categories {
+  margin-right: 14px;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 315px;
+  height: 390px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #111111;
+  border: 1px solid #333333;
+  box-shadow: 0px 0px 30px #000000;
+  border-radius: 20px;
+  margin-left: 15px;
+}
+  #carouselExampleIndicators{
+  display: block ;
+}
+#carouselExampleIndicators1{
   display: block ;
 }
   .card-div{
