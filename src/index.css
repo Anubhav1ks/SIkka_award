@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font: "Roboto" !important;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Float {
+  width: 84px;
+  height: 84px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #111111;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  outline: none;
+}
+.Float img {
+  position: absolute;
+  top: 28px;
+  left: 28px;
 }

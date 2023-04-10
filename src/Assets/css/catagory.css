@@ -70,15 +70,17 @@
   order: 0;
   flex-grow: 0;
 }
-
+.Card-categories img{
+  margin-bottom: 25px;
+}
 .Card-categories p {
   /* width: 317px; */
   height: 216px;
-
+  margin-top: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
   text-align: center;
   color: #ececec;
@@ -137,6 +139,9 @@
     border: 1px solid #333333;
     box-shadow: 0px 0px 30px #000000;
     border-radius: 20px;
+}
+.Card-categories img{
+  margin-bottom: 20px;
 }
 .Card-categories span {
     width: 184px;
@@ -211,7 +216,7 @@
       font-family: "Roboto";
       font-style: normal;
       font-weight: 100;
-      font-size: 15px;
+      font-size: 12px;
       line-height: 144%;
       text-align: center;
       color: #ececec

@@ -2,21 +2,21 @@
 import "../../Assets/css/Navbar.css"
 import navlogo from "../../Assets/images/nav-logo.png"
 import Button from '@mui/material/Button';
-
+import { Link } from 'react-router-dom';
 const Navbar =()=>{
     return (
        <>
            <nav className="navbar">
                <div>
-                    <img src={navlogo} className="navlogo" alt="brand logo"/>
+                   <Link to="/"> <img src={navlogo} className="navlogo" alt="brand logo"/></Link>
                </div>
                <div>
-                   <ul className="nav-links"> {/* Add a class name to ul */}
-                       <li>Categories</li>
-                       <li>The Legacy of Sikka</li>
-                       <li>How to Register</li>
-                       <li>Rules & Rewards</li>
-                       <li>Jury</li>
+                   <ul className="nav-links">
+                       <li><a href="#CATEGORIES" className="anchor" >Categories</a></li>
+                       <li><a href="#REMEMBERING" className="anchor">The Legacy of Sikka</a></li>
+                       <li><a href="#REGISTER" className="anchor">How to Register</a></li>
+                       <li><a href="#REWARDS" className="anchor">Rules & Rewards</a></li>
+                       <li><a href="#JURY" className="anchor">JURY</a></li>
                    </ul>
    
                </div>

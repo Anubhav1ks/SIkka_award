@@ -5,7 +5,7 @@ import "../../Assets/css/remember.css"
 const Remember=()=>{
     return(
         <>
-            <div className="rec-main">
+            <div className="rec-main" id="REMEMBERING">
                 <div className="heading">
                     <span>REMEMBERING THE MONSOON MAN & <br/>
 THE FATHER OF INDIAN METHEROLOGY</span>

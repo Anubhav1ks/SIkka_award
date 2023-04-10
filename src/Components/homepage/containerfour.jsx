@@ -3,7 +3,7 @@ import jury from "../../Assets/images/jury.png";
 const FourContainer = () => {
   return (
     <>
-      <div className="four-container">
+      <div className="four-container" id="JURY">
         <div>
           <div className="four-heading">
             <span>JURY</span>
@@ -32,10 +32,6 @@ const FourContainer = () => {
                 data-target="#carouselExampleIndicators"
                 data-slide-to="3"
               ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="4"
-              ></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -58,14 +54,14 @@ const FourContainer = () => {
                 <div className="jury-card">
                   <img src={jury} alt="not found" />
                   <br />
-                  <span>Jatin Singh</span>
+                  <span>Yogesh Patil</span>
                   <p>
-                    The Founder & Managing Director at Skymet Weather Services
-                    Pvt Ltd, he is in charge of the overall growth strategy of
-                    the company, technology innovation, operations and business
-                    dimensions. Prior to becoming an entrepreneur, Jatin was
-                    associated with TV Today Group as an Assistant Producer and
-                    anchor...
+                    A meteorology and weather instrumentation expert, balanced
+                    by understanding risk to create opportunities and articulate
+                    ways to best leverage weather information across multiple
+                    platforms. He is an engineer by training, followed by
+                    studies in management and more than 14 years of
+                    experience...
                   </p>
                   <a href="/">Read More</a>
                 </div>
@@ -74,14 +70,13 @@ const FourContainer = () => {
                 <div className="jury-card">
                   <img src={jury} alt="not found" />
                   <br />
-                  <span>Jatin Singh</span>
+                  <span>Makarand Kulkarni</span>
                   <p>
-                    The Founder & Managing Director at Skymet Weather Services
-                    Pvt Ltd, he is in charge of the overall growth strategy of
-                    the company, technology innovation, operations and business
-                    dimensions. Prior to becoming an entrepreneur, Jatin was
-                    associated with TV Today Group as an Assistant Producer and
-                    anchor...
+                    A veteran and a visionary in agri-weather risk management,
+                    Makarand Kulkarni is leading the development of cutting-edge
+                    technology as the Chief Product Planning & Quality at Skymet
+                    Weather Services Pvt Ltd. Armed with nearly three decades of
+                    extensive research and expertise in predictive analysis,...
                   </p>
                   <a href="/">Read More</a>
                 </div>
@@ -91,30 +86,14 @@ const FourContainer = () => {
                 <div className="jury-card">
                   <img src={jury} alt="not found" />
                   <br />
-                  <span>Jatin Singh</span>
+                  <span>AVM GP Sharma</span>
                   <p>
-                    The Founder & Managing Director at Skymet Weather Services
-                    Pvt Ltd, he is in charge of the overall growth strategy of
-                    the company, technology innovation, operations and business
-                    dimensions. Prior to becoming an entrepreneur, Jatin was
-                    associated with TV Today Group as an Assistant Producer and
-                    anchor...
-                  </p>
-                  <a href="/">Read More</a>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div className="jury-card">
-                  <img src={jury} alt="not found" />
-                  <br />
-                  <span>Jatin Singh</span>
-                  <p>
-                    The Founder & Managing Director at Skymet Weather Services
-                    Pvt Ltd, he is in charge of the overall growth strategy of
-                    the company, technology innovation, operations and business
-                    dimensions. Prior to becoming an entrepreneur, Jatin was
-                    associated with TV Today Group as an Assistant Producer and
-                    anchor...
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry...
                   </p>
                   <a href="/">Read More</a>
                 </div>
@@ -144,7 +123,7 @@ const FourContainer = () => {
                 aria-hidden="true"
                 id="jury-next"
               ></span>
-              <span class="sr-only danger" >Next</span>
+              <span class="sr-only danger">Next</span>
             </a>
           </div>
 
@@ -167,14 +146,13 @@ const FourContainer = () => {
               <div className="jury-card">
                 <img src={jury} alt="not found" />
                 <br />
-                <span>Jatin Singh</span>
+                <span>Yogesh Patil</span>
                 <p>
-                  The Founder & Managing Director at Skymet Weather Services Pvt
-                  Ltd, he is in charge of the overall growth strategy of the
-                  company, technology innovation, operations and business
-                  dimensions. Prior to becoming an entrepreneur, Jatin was
-                  associated with TV Today Group as an Assistant Producer and
-                  anchor...
+                  A meteorology and weather instrumentation expert, balanced by
+                  understanding risk to create opportunities and articulate ways
+                  to best leverage weather information across multiple
+                  platforms. He is an engineer by training, followed by studies
+                  in management and more than 14 years of experience...
                 </p>
                 <a href="/">Read More</a>
               </div>
@@ -183,28 +161,27 @@ const FourContainer = () => {
               <div className="jury-card">
                 <img src={jury} alt="not found" />
                 <br />
-                <span>Jatin Singh</span>
+                <span>Makarand Kulkarni</span>
                 <p>
-                  The Founder & Managing Director at Skymet Weather Services Pvt
-                  Ltd, he is in charge of the overall growth strategy of the
-                  company, technology innovation, operations and business
-                  dimensions. Prior to becoming an entrepreneur, Jatin was
-                  associated with TV Today Group as an Assistant Producer and
-                  anchor...
+                  A veteran and a visionary in agri-weather risk management,
+                  Makarand Kulkarni is leading the development of cutting-edge
+                  technology as the Chief Product Planning & Quality at Skymet
+                  Weather Services Pvt Ltd. Armed with nearly three decades of
+                  extensive research and expertise in predictive analysis,...
                 </p>
                 <a href="/">Read More</a>
               </div>
               <div className="jury-card">
                 <img src={jury} alt="not found" />
                 <br />
-                <span>Jatin Singh</span>
+                <span>AVM GP Sharma</span>
                 <p>
-                  The Founder & Managing Director at Skymet Weather Services Pvt
-                  Ltd, he is in charge of the overall growth strategy of the
-                  company, technology innovation, operations and business
-                  dimensions. Prior to becoming an entrepreneur, Jatin was
-                  associated with TV Today Group as an Assistant Producer and
-                  anchor...
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry...
                 </p>
                 <a href="/">Read More</a>
               </div>

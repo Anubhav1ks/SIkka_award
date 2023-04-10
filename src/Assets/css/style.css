@@ -10,7 +10,14 @@
   margin-right: 200px;
   padding-top: 29px;
 }
-
+.anchor{
+  color: white;
+  text-decoration: none;
+}
+.anchor:hover{
+  color: white;
+  text-decoration: none;
+}
 .navlogo {
   height: 74px;
   width: 131.55555725097656px;

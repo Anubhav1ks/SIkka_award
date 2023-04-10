@@ -13,7 +13,7 @@ const Centerpage = () => {
     return (
 
         <>
-            <div className="CenterForm">
+            <div className="CenterForm" id="HOME">
                 <div>
                     <div className="outer-div">
                         <p className="memory-text">
@@ -38,7 +38,7 @@ const Centerpage = () => {
                         </div>
                         <div>
                             <Button className="nav-button" onClick={handleRegister}>REGISTER</Button>
-                            <Button className="nav-button-1">LEARN MORE</Button>
+                            <Button className="nav-button-1"><a href="#CATEGORIES" className="anchor" >LEARN MORE</a></Button>
 
                         </div>
                     </div>

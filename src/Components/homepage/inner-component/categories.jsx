@@ -8,7 +8,7 @@ import c5 from "../../../Assets/images/c5.png";
 const Categories = () => {
   return (
     <>
-      <div className="categories-div">
+      <div className="categories-div" id="CATEGORIES">
         <div className="heading">
           <span>CATEGORIES</span>
         </div>

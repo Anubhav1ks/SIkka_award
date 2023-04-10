@@ -2,16 +2,9 @@ import React from "react";
 import "../../Assets/css/style.css"
 import navlogo from "../../Assets/images/Sikka-Award-Logo-02.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// import Container from 'react-bootstrap/Container';
-// import Form from 'react-bootstrap/Form';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-
-
 import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const navigate=useNavigate()
@@ -22,17 +15,17 @@ const Home = () => {
 
     return (
         <>
-           <nav className="navbar">
+           <nav className="navbar" id="NAVBAR">
                <div>
-                    <img src={navlogo} alt="not found" className="navlogo"/>
+                  <Link to="/">   <img src={navlogo} alt="not found" className="navlogo"/></Link>
                </div>
                <div>
-                   <ul className="nav-links"> {/* Add a class name to ul */}
-                       <li>Categories</li>
-                       <li>The Legacy of Sikka</li>
-                       <li>How to Register</li>
-                       <li>Rules & Rewards</li>
-                       <li>Jury</li>
+                   <ul className="nav-links">
+                       <li><a href="#CATEGORIES" className="anchor" >Categories</a></li>
+                       <li><a href="#REMEMBERING" className="anchor">The Legacy of Sikka</a></li>
+                       <li><a href="#REGISTER" className="anchor">How to Register</a></li>
+                       <li><a href="#REWARDS" className="anchor">Rules & Rewards</a></li>
+                       <li><a href="#JURY" className="anchor">JURY</a></li>
                    </ul>
    
                </div>
