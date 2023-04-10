@@ -93,12 +93,12 @@
 @media screen and (min-width: 1024px)  and (max-width: 1690px){
 
 .Card-categories {
-    margin-right: 12px;
-    padding: 8px;
-    box-sizing: border-box;
-    margin-bottom: 13px;
-    width: 315px;
-    height: 357px;
+    margin-right: 12px !important;
+    padding: 8px !important;
+    box-sizing: border-box !important;
+    margin-bottom: 13px !important;
+    width: 315px !important;
+    height: 357px !important;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -108,7 +108,7 @@
     border-radius: 20px;
 }
 .Card-categories p {
-    width: 290px;
+    width: 290px !important;
     height: 205px;
     font-family: "Roboto";
     font-style: normal;
