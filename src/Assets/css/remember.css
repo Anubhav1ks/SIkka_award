@@ -56,9 +56,9 @@ color: #111111;
     }
     .rec-main{
         text-align: center;
-        margin-left: 200px;
-        margin-right: 200px;
-        padding-bottom: 90px;
+        margin-left: 200px !important;
+        margin-right: 200px !important;
+        padding-bottom: 90px !important;
     }
     
     .rec-main .heading{
