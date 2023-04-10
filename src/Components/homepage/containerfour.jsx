@@ -1,6 +1,19 @@
 import "../../Assets/css/Four.css";
+import BasicModal from "./inner-component/popup.jsx";
+import React from "react";
 import jury from "../../Assets/images/jury.png";
 const FourContainer = () => {
+  const [title, settitle] = React.useState("");
+  const [discription, setdiscription] = React.useState("");
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = (t,d) => {
+    settitle(t);
+    setdiscription(d)
+    setOpen(true);
+  };
+  const handleClose = () => setOpen(false);
+
   return (
     <>
       <div className="four-container" id="JURY">
@@ -47,7 +60,17 @@ const FourContainer = () => {
                     associated with TV Today Group as an Assistant Producer and
                     anchor...
                   </p>
-                  <a href="/">Read More</a>
+                <div
+                  className="read-more"
+                  onClick={() =>
+                    handleOpen(
+                      "Jatin Singh",
+                      "The Founder & Managing Director at Skymet Weather Services Pvt Ltd, he is in charge of the overall growth strategy of the company, technology innovation, operations and business dimensions. Prior to becoming an entrepreneur, Jatin was associated with TV Today Group as an Assistant Producer and anchor. Before joining the group, he was a reporter with ANI/Reuters handling multiple verticals such as National Broadcasting Corporation (New Delhi and Jammu & Kashmir) and a news bulletin carried in the United States, the South Asian Newsline. He was also an Associate Producer for the Singapore-based 24-hour news network Channel News Asia."
+                    )
+                  }
+                >
+                    Read More
+                  </div>
                 </div>
               </div>
               <div class="carousel-item">
@@ -63,7 +86,17 @@ const FourContainer = () => {
                     studies in management and more than 14 years of
                     experience...
                   </p>
-                  <a href="/">Read More</a>
+                <div
+                  className="read-more"
+                  onClick={() =>
+                    handleOpen(
+                      "Yogesh Patil",
+                      "A meteorology and weather instrumentation expert, balanced by understanding risk to create opportunities and articulate ways to best leverage weather information across multiple platforms. He is an engineer by training, followed by studies in management and more than 14 years of experience"
+                    )
+                  }
+                >
+                    Read More
+                  </div>
                 </div>
               </div>
               <div class="carousel-item">
@@ -78,7 +111,17 @@ const FourContainer = () => {
                     Weather Services Pvt Ltd. Armed with nearly three decades of
                     extensive research and expertise in predictive analysis,...
                   </p>
-                  <a href="/">Read More</a>
+                <div
+                  className="read-more"
+                  onClick={() =>
+                    handleOpen(
+                      "Makarand Kulkarni",
+                      "A veteran and a visionary in agri-weather risk management, Makarand Kulkarni is leading the development of cutting-edge technology as the Chief Product Planning & Quality at Skymet Weather Services Pvt Ltd. Armed with nearly three decades of extensive research and expertise in predictive analysis,"
+                    )
+                  }
+                >
+                    Read More
+                  </div>
                 </div>
               </div>
 
@@ -95,7 +138,17 @@ const FourContainer = () => {
                     type specimen book. Lorem Ipsum is simply dummy text of the
                     printing and typesetting industry...
                   </p>
-                  <a href="/">Read More</a>
+                <div
+                  className="read-more"
+                  onClick={() =>
+                    handleOpen(
+                      "AVM GP Sharma",
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                    )
+                  }
+                >
+                    Read More
+                  </div>
                 </div>
               </div>
             </div>
@@ -141,7 +194,17 @@ const FourContainer = () => {
                   associated with TV Today Group as an Assistant Producer and
                   anchor...
                 </p>
-                <a href="/">Read More</a>
+                <div
+                  className="read-more"
+                  onClick={() =>
+                    handleOpen(
+                      "Jatin Singh",
+                      "The Founder & Managing Director at Skymet Weather Services Pvt Ltd, he is in charge of the overall growth strategy of the company, technology innovation, operations and business dimensions. Prior to becoming an entrepreneur, Jatin was associated with TV Today Group as an Assistant Producer and anchor. Before joining the group, he was a reporter with ANI/Reuters handling multiple verticals such as National Broadcasting Corporation (New Delhi and Jammu & Kashmir) and a news bulletin carried in the United States, the South Asian Newsline. He was also an Associate Producer for the Singapore-based 24-hour news network Channel News Asia."
+                    )
+                  }
+                >
+                  Read More
+                </div>
               </div>
               <div className="jury-card">
                 <img src={jury} alt="not found" />
@@ -154,7 +217,17 @@ const FourContainer = () => {
                   platforms. He is an engineer by training, followed by studies
                   in management and more than 14 years of experience...
                 </p>
-                <a href="/">Read More</a>
+                <div
+                  className="read-more"
+                  onClick={() =>
+                    handleOpen(
+                      "Yogesh Patil",
+                      "A meteorology and weather instrumentation expert, balanced by understanding risk to create opportunities and articulate ways to best leverage weather information across multiple platforms. He is an engineer by training, followed by studies in management and more than 14 years of experience"
+                    )
+                  }
+                >
+                  Read More
+                </div>
               </div>
             </div>
             <div className="jury-inner">
@@ -169,7 +242,17 @@ const FourContainer = () => {
                   Weather Services Pvt Ltd. Armed with nearly three decades of
                   extensive research and expertise in predictive analysis,...
                 </p>
-                <a href="/">Read More</a>
+                <div
+                  className="read-more"
+                  onClick={() =>
+                    handleOpen(
+                      "Makarand Kulkarni",
+                      "A veteran and a visionary in agri-weather risk management, Makarand Kulkarni is leading the development of cutting-edge technology as the Chief Product Planning & Quality at Skymet Weather Services Pvt Ltd. Armed with nearly three decades of extensive research and expertise in predictive analysis,"
+                    )
+                  }
+                >
+                  Read More
+                </div>
               </div>
               <div className="jury-card">
                 <img src={jury} alt="not found" />
@@ -183,12 +266,34 @@ const FourContainer = () => {
                   specimen book. Lorem Ipsum is simply dummy text of the
                   printing and typesetting industry...
                 </p>
-                <a href="/">Read More</a>
+                <div
+                  className="read-more"
+                  onClick={() =>
+                    handleOpen(
+                      "AVM GP Sharma",
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                    )
+                  }
+                >
+                  Read More
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {open ? (
+        <BasicModal
+        title={title}
+        discription={discription}
+          handleOpen={handleOpen}
+          open={open}
+          handleClose={handleClose}
+        />
+      ) : (
+        ""
+      )}
     </>
   );
 };
