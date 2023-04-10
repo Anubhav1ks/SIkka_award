@@ -22,6 +22,9 @@ text-transform: uppercase;
 
 color: #111111;
 }
+.color-gold{
+    color: #CBAA5D;
+}
 
 .rec-center{
     display: flex;
