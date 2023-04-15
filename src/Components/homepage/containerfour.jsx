@@ -16,7 +16,7 @@ const FourContainer = () => {
 
   return (
     <>
-      <div className="four-container" id="JURY">
+      <div className="four-container" id="jury">
         <div>
           <div className="four-heading">
             <span>JURY</span>

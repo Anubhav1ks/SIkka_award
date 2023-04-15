@@ -20,7 +20,9 @@
 }
 
 @media screen and (max-width: 425px)  and (max-width: 1690px){
-
+    .footer-main span {
+        font-size: 12px;
+    }
 
     .footer span {
         width: 100%;
@@ -29,7 +31,7 @@
         font-style: normal;
         font-weight: 600;
         text-align: center;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 23px;
         letter-spacing: 0.02em;
         color: #111111;

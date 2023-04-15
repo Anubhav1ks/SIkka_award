@@ -92,7 +92,7 @@ const FAQmain = () => {
   const secondHalf = faqs.slice(half);
 
   return (
-    <div className="App">
+    <div className="App" id="faq">
         <div>
             <span>FAQs</span>
         </div>

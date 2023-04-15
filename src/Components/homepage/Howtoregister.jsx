@@ -14,7 +14,7 @@ import awardpic from "../../Assets/images/awardpic.svg";
 const Howtoregister = () => {
     return (
         <>
-            <div className="How-container" id="REGISTER">
+            <div className="How-container" id="register">
                 <div className="HOW-Heading">
                     <span>HOW TO REGISTER</span>
                 </div>
@@ -48,7 +48,7 @@ const Howtoregister = () => {
                     <hr className="main-hr-1" />
                     <img src={Starhr} className="starthr" alt="start" />
                 </div>
-                <div className="HOW-Heading" id="REWARDS">
+                <div className="HOW-Heading" id="rules">
                     <span>RULES & REWARDS</span>
                 </div>
                 <div className="rule-center">

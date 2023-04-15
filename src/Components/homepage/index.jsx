@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Assets/css/style.css"
-import navlogo from "../../Assets/images/Sikka-Award-Logo-02.png";
+import navlogo from "../../Assets/images/nav-logo.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
@@ -21,11 +21,12 @@ const Home = () => {
                </div>
                <div>
                    <ul className="nav-links">
-                       <li><a href="#CATEGORIES" className="anchor" >Categories</a></li>
-                       <li><a href="#REMEMBERING" className="anchor">The Legacy of Sikka</a></li>
-                       <li><a href="#REGISTER" className="anchor">How to Register</a></li>
-                       <li><a href="#REWARDS" className="anchor">Rules & Rewards</a></li>
-                       <li><a href="#JURY" className="anchor">JURY</a></li>
+                       <li><a href="#categories" className="anchor" >Categories</a></li>
+                       <li><a href="#legacy" className="anchor">The Legacy of Sikka</a></li>
+                       <li><a href="#register" className="anchor">How to Register</a></li>
+                       <li><a href="#rules" className="anchor">Rules & Rewards</a></li>
+                       <li><a href="#jury" className="anchor">JURY</a></li>
+                       <li><a href="#faq" className="anchor">FAQ</a></li>
                    </ul>
    
                </div>

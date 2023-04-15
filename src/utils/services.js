@@ -1,7 +1,8 @@
 import axios from "axios";
 import { FORM_ENDPOINT } from "./routes";
 
-export const BASE_URL = "https://himashusirapi-production.up.railway.app"; //devlopment//
+// export const BASE_URL = "https://himashusirapi-production.up.railway.app"; //devlopment//
+export const BASE_URL = "http://192.168.103.250:3000"; //production//
 
 
 axios.defaults.baseURL = BASE_URL;
@@ -17,7 +18,7 @@ export async function SUBMITFORM(data) {
         },
       });
       if (response.status === 200) {
-        return response;
+        return {res:response};
       } else {
         return response.data;
       }

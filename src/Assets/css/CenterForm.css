@@ -387,12 +387,40 @@ height: 48px;
 .brand-logo {
   margin-left: 13%;
   margin-top: 7%;
+  margin-right: 16%;
   margin-bottom: 15%;
   position: relative;
 }
 .ecclips{
   bottom: -46px;
   right: 22px;
+  box-sizing: border-box;
+  width: auto;
+  height: 108px;
+}
+}
+
+@media screen and (max-width: 425px) and (max-width: 1690px) {
+.brand-logo {
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 30%;
+  position: relative;
+}
+.ecclips {
+  bottom: -68px;
+  right: -11px;
+  box-sizing: border-box;
+  width: auto;
+  height: 108px;
+}
+
+}
+@media screen and (max-width: 375px) and (max-width: 1690px) {
+
+.ecclips {
+  bottom: -68px;
+  right: -57px;
   box-sizing: border-box;
   width: auto;
   height: 108px;

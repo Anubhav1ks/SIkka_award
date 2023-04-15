@@ -5,11 +5,11 @@ import "../../Assets/css/remember.css";
 const Remember = () => {
   return (
     <>
-      <div className="rec-main" id="REMEMBERING">
+      <div className="rec-main" id="legacy">
         <div className="heading">
           <span>
             REMEMBERING THE MONSOON MAN & <br />
-            THE FATHER OF INDIAN METHEROLOGY
+            THE FATHER OF INDIAN METEOROLOGY
           </span>
         </div>
         <div className="rec-center">
@@ -28,7 +28,7 @@ const Remember = () => {
               Meteorological Department in 1954. His contribution to the field
               of Indian Monsoon is beyond comparison as he had a pivotal role in
               various studies that included the <span className="color-gold">correlation between the Indian
-              Monsoon and El El Niño, Walker Circulation, extreme weather events
+              Monsoon and El Niño, Walker Circulation, extreme weather events
               and Monsoon studies conducted over the Indian Ocean.</span>
             </p>
           </div>

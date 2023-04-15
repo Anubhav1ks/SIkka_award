@@ -33,6 +33,7 @@ function MyForm() {
       console.log("hello");
       await SUBMITFORM(form)
         .then((res) => {
+          console.log(res)
           setloading(false);
           handleOpen();
         })
