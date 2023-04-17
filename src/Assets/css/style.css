@@ -112,6 +112,45 @@
   color: #111111;
 }
 
+/* hover effect */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+:root {
+  --btn-border: 1px solid rgba(255, 255, 255, 0.2);
+  --btn-bg: transparent;
+  --btn-shadow: 1px 1px 25px 10px rgba(255, 255, 255, 0.5);
+  --btn-text-color: #f4f4f4;
+  --shine-degree: 120deg;
+  --shine-color: rgba(255, 255, 255, 0.2);
+  --shine-effect: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
+  --shine-transition: all 0.65s ease-in-out;
+}
+
+.btn-hover::before {
+  left: -100%;
+  transition: var(--shine-transition);
+}
+.btn-hover {
+  box-shadow: var(--btn-shadow);
+}
+.btn-hover:hover::before {
+  left: 100%;
+}
+
+
+@keyframes shine {
+  0% {
+    left: -100%;
+    transition-property: left;
+  }
+  11.5044247788%, 100% {
+    left: 100%;
+    transition-property: left;
+  }
+}
+
+
+
 /* categories css */
 
 .CenterForm .nav-button-1 {
