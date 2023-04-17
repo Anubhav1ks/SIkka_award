@@ -5,74 +5,40 @@ import FAQ from "./inner-component/FAQ";
 const FAQmain = () => {
   const [faqs, setFaqs] = useState([
     {
-      question: "How many programmers does it take to screw a lightbulb?",
+      question: "What is Skymet Sikka Award?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+        "Skymet Sikka Award is a prestigious recognition honouring the legacy of the late Dev Raj Sikka. This award recognizes and celebrates Mr. Sikka's unwavering passion and commitment to advancing the field of Indian Meteorology, particularly his remarkable contribution to the study of the Indian Monsoon.",
       open: true,
     },
     {
-      question: "Who is the most awesome person?",
-      answer: "You! The viewer!",
+      question: "What is the goal of Skymet Sikka Award?",
+      answer: "The goal of Skymet Sikka Award is to acknowledge and promote the efforts of individuals who are contributing to the advancement of the field of Indian Meteorology and working across multiple disciplines to further our understanding of it.",
       open: false,
     },
     {
       question:
-        "How many questions does it take to makes a succesful FAQ Page?",
-      answer: "This many!",
+        "What are the categories of Skymet Sikka Award?",
+      answer: "The Skymet Sikka Award has 5 categories: Climate Change, Monsoon Dynamics, Monsoon Predictions, Cyclones, and Satellite Meteorology.",
       open: false,
     },
     {
-        question: "How many programmers does it take to screw a lightbulb?",
-        answer:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
-        open: false,
-      },
-      {
-        question: "Who is the most awesome person?",
-        answer: "You! The viewer!",
-        open: false,
-      },
-      {
-        question:
-          "How many questions does it take to makes a succesful FAQ Page?",
-        answer: "This many!",
-        open: false,
-      },
-      {
-        question: "How many programmers does it take to screw a lightbulb?",
-        answer:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
-        open: false,
-      },
-      {
-        question: "Who is the most awesome person?",
-        answer: "You! The viewer!",
-        open: false,
-      },
-      {
-        question:
-          "How many questions does it take to makes a succesful FAQ Page?",
-        answer: "This many!",
-        open: false,
-      },
-      {
-          question: "How many programmers does it take to screw a lightbulb?",
-          answer:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
-          open: false,
-        },
-        {
-          question: "Who is the most awesome person?",
-          answer: "You! The viewer!",
-          open: false,
-        },
-        {
-          question:
-            "How many questions does it take to makes a succesful FAQ Page?",
-          answer: 
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
-        open: true,
-        },
+      question: "What is the prize for winning Skymet Sikka Award?",
+      answer:
+        "The winning prize for Skymet Sikka Award is Rs. 1,00,000 along with a Trophy and a Certificate.",
+      open: false,
+    },
+    {
+      question: "What are the rules for submitting research papers for Skymet Sikka Award?",
+      answer: "Ensure that the first and corresponding author of the paper is under 40 years of age and the research paper should be original.",
+      open: false,
+    },
+    {
+      question:
+        "When will the winner of Skymet Sikka Award be announced?",
+      answer: "The winner of Skymet Sikka Award will be announced on 3rd June 2023.",
+      open: true,
+    },
+    
   ]);
 
   const toggleFAQ = (index) => {
@@ -93,9 +59,9 @@ const FAQmain = () => {
 
   return (
     <div className="App" id="faq">
-        <div>
-            <span>FAQs</span>
-        </div>
+      <div>
+        <span>FAQs</span>
+      </div>
       <div className="faqs-container">
         <div className="faqs">
           {firstHalf.map((faq, index) => (

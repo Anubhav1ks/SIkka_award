@@ -2,6 +2,7 @@ import logo1 from "../../Assets/images/logo-1.png"
 import "../../Assets/css/CenterForm.css"
 import circle2 from "../../Assets/images/gp-1.png"
 import MyForm from "./inner-component/form"
+
 const CenterForm =()=>{
 
     return(

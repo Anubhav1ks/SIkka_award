@@ -23,3 +23,59 @@
   position: absolute;
   top: 23px;
 }
+
+.goback{
+  justify-content: end !important;
+  padding: 0 !important;
+  padding-right: 4% !important;
+  padding-top: 1% !important;
+
+}
+
+.goback .nav-button-1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  /* padding: 14px 30px; */
+  /* gap: 10px; */
+  /* width: 101px; */
+  width: 126px;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 50px !important;
+  border: 2px solid white;
+  color: #ececec !important;
+}
+.goback .anchor{
+  width: 100px;
+}
+.goback img{
+  margin-right: 2%;
+}
+
+.mobileotp{
+  position: relative;
+}
+.mobileotp button{
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top:33%;
+  background: none !important;
+  border: none;
+  color: #fff;
+
+}
+
+@media screen and (max-width: 550px)  and (max-width: 1690px) {
+
+.goback{
+  display: none !important;
+}
+
+}

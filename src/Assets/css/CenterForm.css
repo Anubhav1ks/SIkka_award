@@ -32,6 +32,7 @@
 .form-container input[type="tel"],
 .form-container input[type="password"],
 .form-container input[type="file"],
+.form-container input[type="number"],
 .form-container select {
   width: 100%;
   padding: 10px;

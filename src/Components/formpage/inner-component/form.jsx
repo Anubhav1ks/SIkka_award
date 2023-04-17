@@ -1,12 +1,13 @@
 import { Button } from "@mui/material";
 import React, { useState } from "react";
-import { SUBMITFORM } from "../../../utils/services";
+import { SUBMITFORM, SENDOTP } from "../../../utils/services";
 import Popup from "./popup";
 
 function MyForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [cateogry, setcateogry] = useState("");
   const [password, setPassword] = useState("");
   const [repeatPassword, setRepeatPassword] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
@@ -16,6 +17,8 @@ function MyForm() {
   const [researchPaper, setResearchPaper] = useState(null);
   const [filename, setfilename] = useState("");
   const [loading, setloading] = useState(false);
+  const [otp, setotp] = useState();
+  const [showotp, setshowotp] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const form = new FormData();
   const handleSubmit = async (event) => {
@@ -29,11 +32,12 @@ function MyForm() {
       form.append("password", password);
       form.append("mobileNumber", mobileNumber);
       form.append("dob", birthDay + birthMonth + birthYear);
+      form.append("cateogry", cateogry);
       form.append("myfile", researchPaper);
       console.log("hello");
       await SUBMITFORM(form)
         .then((res) => {
-          console.log(res)
+          console.log(res);
           setloading(false);
           handleOpen();
         })
@@ -82,6 +86,14 @@ function MyForm() {
     setfilename(event.target.files[0].name);
     setResearchPaper(event.target.files[0]);
   };
+
+  const handleotp = async (e) => {
+    e.preventDefault()
+    await SENDOTP({ number: mobileNumber }).then(() => {
+    setshowotp(true)
+    });
+  };
+
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -139,7 +151,7 @@ function MyForm() {
           </div>
         </div>
         <br />
-        <div>
+        <div className="mobileotp">
           <label>Mobile Number:</label>
           <input
             placeholder="Mobile Number"
@@ -155,7 +167,31 @@ function MyForm() {
             }}
             required
           />
+
+        
         </div>
+        {//showotp ? (
+        //   <>
+        //     <br />
+        //     <div>
+          // <button onClick={handleotp}> Send Otp </button>
+        //       <label>OTP:</label>
+        //       <input
+        //         type="number"
+        //         id="otp"
+        //         name="otp"
+        //         maxlength="4"
+        //         required
+        //         value={otp}
+        //         onChange={(event) => setotp(event.target.value)}
+        //       />
+        //     </div>
+        //   </>
+        // ) : (
+        //   ""
+        // )
+        }
+
         <br />
         <div>
           <label>Date of Birth:</label>
@@ -201,6 +237,22 @@ function MyForm() {
               ))}
             </select>
           </div>
+        </div>
+        <br />
+        <div>
+          <label>Catagory</label>
+          <select
+            value={cateogry}
+            onChange={(event) => setcateogry(event.target.value)}
+            required
+          >
+            <option value="">Catagory</option>
+            <option value="CLIMATE_CHANGE">CLIMATE CHANGE</option>
+            <option value="MONSOON_DYNAMICS">MONSOON DYNAMICS</option>
+            <option value="SATELLITE_IMAGERY">SATELLITE IMAGERY</option>
+            <option value="CYCLONES">CYCLONES</option>
+            <option value="MONSOON_PREDICTION">MONSOON PREDICTION</option>
+          </select>
         </div>
         <br />
         <div>
