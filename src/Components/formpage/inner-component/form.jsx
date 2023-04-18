@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import React, { useState } from "react";
-import { SUBMITFORM, SENDOTP } from "../../../utils/services";
+import { SUBMITFORM, SENDOTP ,VerifyOTP} from "../../../utils/services";
 import Popup from "./popup";
 
 function MyForm() {
@@ -20,6 +20,8 @@ function MyForm() {
   const [otp, setotp] = useState();
   const [showotp, setshowotp] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [verified, setverified] = useState(false);
+
   const form = new FormData();
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -89,11 +91,26 @@ function MyForm() {
 
   const handleotp = async (e) => {
     e.preventDefault()
-    await SENDOTP({ number: mobileNumber }).then(() => {
+    if(mobileNumber!==""){
+    await SENDOTP({ phoneNumber: mobileNumber }).then((res) => {
+      alert(res.res.data)
     setshowotp(true)
     });
+    }else{
+      alert("enter mobile number")
+    }
   };
-
+  const handleverify = async (e) => {
+    e.preventDefault()
+    if(mobileNumber!==""){
+    await VerifyOTP({ phoneNumber: mobileNumber, otp:otp  }).then((res) => {
+      alert(res.res.data)
+    setverified(true)
+    }).catch(err=>alert(err))
+    }else{
+      alert("enter mobile number")
+    }
+  };
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -168,28 +185,30 @@ function MyForm() {
             required
           />
 
+          <button onClick={handleotp}> Send Otp </button>
         
         </div>
-        {//showotp ? (
-        //   <>
-        //     <br />
-        //     <div>
-          // <button onClick={handleotp}> Send Otp </button>
-        //       <label>OTP:</label>
-        //       <input
-        //         type="number"
-        //         id="otp"
-        //         name="otp"
-        //         maxlength="4"
-        //         required
-        //         value={otp}
-        //         onChange={(event) => setotp(event.target.value)}
-        //       />
-        //     </div>
-        //   </>
-        // ) : (
-        //   ""
-        // )
+        {showotp ? (
+          <>
+            <br />
+            <div className="mobileotp">
+              <label>OTP:</label>
+              <input
+                type="number"
+                id="otp"
+                name="otp"
+                maxlength="4"
+                required
+                value={otp}
+                onChange={(event) => setotp(event.target.value)}
+              />
+          <button onClick={handleverify}> Send Otp </button>
+
+            </div>
+          </>
+        ) : (
+          ""
+        )
         }
 
         <br />
@@ -287,11 +306,7 @@ function MyForm() {
         </div>
         <br />
         <div>
-          {researchPaper == null ? (
-            <Button className="nav-button" id="submit-button" disabled>
-              Submit Application
-            </Button>
-          ) : (
+          { verified ? (
             <Button
               className="nav-button"
               id="submit-button-2"
@@ -299,7 +314,11 @@ function MyForm() {
             >
               {loading === true ? "Loading..." : "Submit Application"}
             </Button>
-          )}
+          ) :  (
+            <Button className="nav-button" id="submit-button" disabled>
+              Submit Application
+            </Button>
+          ) }
         </div>
       </form>
 
