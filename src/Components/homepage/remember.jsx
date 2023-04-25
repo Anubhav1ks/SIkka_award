@@ -20,7 +20,7 @@ const Remember = () => {
               to new and unfathomable heights,<span className="color-gold"> Dev Raj Sikka</span>, was undeniably the
               <span className="color-gold">"Bhishma Pitamah of Indian Meteorology."</span> With grave heart and
               utmost respect, Skymet Weather assiduously remembers the genius
-              behind Indian Meteorology. Known as 'Monsoon Man,' Mr. Sikka was
+              behind Indian Meteorology. Known as <span className="color-gold">'Monsoon Man,'</span> Mr. Sikka was
               born on March 01, 1932, in Jhang Maghiana, which is now in Punjab,
               Pakistan and later migrated to India after the partition. Pursuing
               his passion for meteorology, Mr. Sikka did his Master of Science

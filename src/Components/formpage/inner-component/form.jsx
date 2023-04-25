@@ -20,7 +20,7 @@ function MyForm() {
   const [otp, setotp] = useState();
   const [showotp, setshowotp] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [verified, setverified] = useState(false);
+  const [verified, setverified] = useState(true);
 
   const form = new FormData();
   const handleSubmit = async (event) => {
