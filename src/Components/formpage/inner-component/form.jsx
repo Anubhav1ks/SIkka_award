@@ -202,7 +202,7 @@ function MyForm() {
                 value={otp}
                 onChange={(event) => setotp(event.target.value)}
               />
-          <button onClick={handleverify}> Send Otp </button>
+          <button onClick={handleverify}> Verify Otp </button>
 
             </div>
           </>
