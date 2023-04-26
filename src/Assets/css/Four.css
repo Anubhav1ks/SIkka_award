@@ -102,7 +102,9 @@ flex-grow: 0;
 
 
 @media screen and (min-width: 768px)  and (max-width: 1690px) {
-
+    .how-card span{
+        font-size: 16px !important; 
+    }
     .jury-card 
     {
     margin-bottom: 31px;
@@ -122,6 +124,9 @@ flex-grow: 0;
 
 
 @media screen and (max-width: 550px)  and (max-width: 1690px) {
+    .how-card span{
+        font-size: 15px !important; 
+    }
 .jury-card p {
 width: 100%;
 /* margin: 2%; */
