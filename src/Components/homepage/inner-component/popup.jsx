@@ -1,6 +1,5 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import jury from "../../../Assets/images/jury.png";
 import "../../../Assets/css/popup2.css";
 
 import Modal from "@mui/material/Modal";
@@ -12,7 +11,7 @@ const style = {
   transform: "translate(-50%, -50%)",
 };
 
-const BasicModal = ({ handleClose, open, handleOpen, title, discription }) => {
+const BasicModal = ({ handleClose, open, handleOpen, title, discription,img }) => {
   return (
     <div>
       <Modal
@@ -25,7 +24,7 @@ const BasicModal = ({ handleClose, open, handleOpen, title, discription }) => {
           <div class="carousel-item active">
             <div className="jury-card-2">
               <div>
-                <img src={jury} alt="not found" />
+                <img src={img} className="model-img" alt="not found" />
               </div>
               <div>
                 <span>{title}</span>

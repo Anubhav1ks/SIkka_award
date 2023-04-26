@@ -32,7 +32,7 @@ color: #111111;
     align-items: center;
 }
 .div-rec{
-    width: 50%;
+    width: 100%;
 }
 .div-rec p{
     text-align: left;
@@ -44,8 +44,12 @@ color: #111111;
 
 .div-rec img:first-child {
     position: absolute;
-    top: -26px;
-    left: 110px;
+    top: 4px;
+    left: 126px;
+    margin: 0;
+}
+.div-rec img{
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1690px) {

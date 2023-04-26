@@ -21,19 +21,16 @@ const Centerpage = () => {
                         </p>
 
                         <p className="annual-skymet">
-                            ANNUAL SKYMET
+                            Skymet Sikka 
                         </p>
                         <br />
                         <p className="annual-skymet2">
-                            SIKKA AWARD 2023
+                            Meteorology Award 2023
                         </p>
 
                         <div className="win-trophydiv">
                             <p className="win-trophy">
-                                The Sikka Meteorology Award 2023, presented by
-                                Skymet Weather, is a prestigious recognition honouring the
-                                legacy of Mr. Dev Raj Sikka. Register
-                                now and stand a chance to win the trophy and Rs. 1,00,000/-
+                                The Sikka Meteorology Award 2023, presented by Skymet Weather, is a prestigious recognition honouring the legacy of Mr Dev Raj Sikka.
                             </p>
                         </div>
                         <div>

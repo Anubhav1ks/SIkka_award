@@ -81,7 +81,7 @@
   line-height: 15px;
   letter-spacing: 0.06em;
   color: #cbaa5d;
-  width: 491px;
+  /* width: 491px; */
 }
 
 .win-trophydiv {
@@ -227,7 +227,7 @@
     line-height: 15px;
     letter-spacing: 0.06em;
     color: #cbaa5d;
-    width: 402px;
+    /* width: 402px; */
 }
 .win-trophydiv {
     width: 51vw;
