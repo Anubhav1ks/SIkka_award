@@ -2,7 +2,6 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "homepage":"/SikkaAwards",
   "proxy": "http://192.168.103.250:3000",
   "dependencies": {
     "@emotion/react": "^11.10.6",
