@@ -59,7 +59,7 @@ const FourContainer = () => {
                   <br />
                   <span>Jatin Singh</span>
                   <p>
-                    The Founder & Managing Director at Skymet Weather Services
+                    The Founder & Chairman at Skymet Weather Services
                     Pvt Ltd, he is in charge of the overall growth strategy of
                     the company, technology innovation, operations and business
                     dimensions. Prior to becoming an entrepreneur, Jatin was
@@ -71,7 +71,7 @@ const FourContainer = () => {
                     onClick={() =>
                       handleOpen(
                         "Jatin Singh",
-                        "The Founder & Managing Director at Skymet Weather Services Pvt Ltd, he is in charge of the overall growth strategy of the company, technology innovation, operations and business dimensions. Prior to becoming an entrepreneur, Jatin was associated with TV Today Group as an Assistant Producer and anchor. Before joining the group, he was a reporter with ANI/Reuters handling multiple verticals such as National Broadcasting Corporation (New Delhi and Jammu & Kashmir) and a news bulletin carried in the United States, the South Asian Newsline. He was also an Associate Producer for the Singapore-based 24-hour news network Channel News Asia.",
+                        "The Founder & Chairman at Skymet Weather Services Pvt Ltd, he is in charge of the overall growth strategy of the company, technology innovation, operations and business dimensions. Prior to becoming an entrepreneur, Jatin was associated with TV Today Group as an Assistant Producer and anchor. Before joining the group, he was a reporter with ANI/Reuters handling multiple verticals such as National Broadcasting Corporation (New Delhi and Jammu & Kashmir) and a news bulletin carried in the United States, the South Asian Newsline. He was also an Associate Producer for the Singapore-based 24-hour news network Channel News Asia.",
                         Jatin
                       )
                     }
@@ -197,7 +197,7 @@ const FourContainer = () => {
                 <br />
                 <span>Jatin Singh</span>
                 <p>
-                  The Founder & Managing Director at Skymet Weather Services Pvt
+                  The Founder & Chairman at Skymet Weather Services Pvt
                   Ltd, he is in charge of the overall growth strategy of the
                   company, technology innovation, operations and business
                   dimensions. Prior to becoming an entrepreneur, Jatin was
@@ -209,7 +209,7 @@ const FourContainer = () => {
                   onClick={() =>
                     handleOpen(
                       "Jatin Singh",
-                      "The Founder & Managing Director at Skymet Weather Services Pvt Ltd, he is in charge of the overall growth strategy of the company, technology innovation, operations and business dimensions. Prior to becoming an entrepreneur, Jatin was associated with TV Today Group as an Assistant Producer and anchor. Before joining the group, he was a reporter with ANI/Reuters handling multiple verticals such as National Broadcasting Corporation (New Delhi and Jammu & Kashmir) and a news bulletin carried in the United States, the South Asian Newsline. He was also an Associate Producer for the Singapore-based 24-hour news network Channel News Asia.",
+                      "The Founder & Chairman at Skymet Weather Services Pvt Ltd, he is in charge of the overall growth strategy of the company, technology innovation, operations and business dimensions. Prior to becoming an entrepreneur, Jatin was associated with TV Today Group as an Assistant Producer and anchor. Before joining the group, he was a reporter with ANI/Reuters handling multiple verticals such as National Broadcasting Corporation (New Delhi and Jammu & Kashmir) and a news bulletin carried in the United States, the South Asian Newsline. He was also an Associate Producer for the Singapore-based 24-hour news network Channel News Asia.",
                       Jatin
                     )
                   }

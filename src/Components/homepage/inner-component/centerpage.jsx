@@ -23,7 +23,6 @@ const Centerpage = () => {
                         <p className="annual-skymet">
                             Skymet Sikka 
                         </p>
-                        <br />
                         <p className="annual-skymet2">
                             Meteorology Award 2023
                         </p>
