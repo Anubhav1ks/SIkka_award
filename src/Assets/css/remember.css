@@ -52,6 +52,11 @@ color: #111111;
     margin-top: 20px;
 }
 
+@media screen and (min-width: 1024px){
+    .div-rec p{
+        margin-left: 20%;
+    }
+}
 @media screen and (min-width: 1440px) and (max-width: 1690px) {
     .div-rec img:first-child {
         position: absolute;

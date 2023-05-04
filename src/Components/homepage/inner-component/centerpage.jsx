@@ -33,7 +33,7 @@ const Centerpage = () => {
                             </p>
                         </div>
                         <div>
-                            <Button className="nav-button btn-hover" onClick={handleRegister}>REGISTER</Button>
+                            <Button className="nav-button " onClick={handleRegister}>REGISTER</Button>
                             <Button className="nav-button-1"><a href="#CATEGORIES" className="anchor" >LEARN MORE</a></Button>
 
                         </div>
