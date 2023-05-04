@@ -21,7 +21,7 @@ const Navbar =()=>{
    
                </div>
                <div>
-                   <Button className="nav-button display">Register</Button>               
+                   <Button className="nav-button display btn-alt">Register</Button>               
                </div>
            </nav>
        </>

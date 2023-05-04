@@ -31,7 +31,7 @@ const Home = () => {
    
                </div>
                <div>
-                   <Button className="nav-button display" onClick={handleRegister}>Register</Button>
+                   <Button className="nav-button display btn-alt" onClick={handleRegister}>Register</Button>
                </div>
            </nav>
        </>
