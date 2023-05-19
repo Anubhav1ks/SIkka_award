@@ -19,7 +19,7 @@ const Form = () => {
                    <Button className="" onClick={handleback}><a href="/SikkaAwards" className="anchor" > <img src={back} alt="no img"/> Go Back</a></Button>
                 </div>
                 <div className="headding">
-                    <span className="heading-1">In the loving memory of <span style={{ "color": "#CBAA5D", marginLeft: "10px" }}>  Mr. Dev Raj Sikka,  </span> Skymet presents the</span><br />
+                    <span className="heading-1">In the loving memory of <span style={{ "color": "#CBAA5D", marginLeft: "10px" }}>  Mr. Dev Raj Sikka, &nbsp;</span>  Skymet presents the</span><br />
                     <span className="heading-2">Skymet Sikka Meteorology Award 2023</span>
                 </div>
                 <CenterForm/>

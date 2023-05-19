@@ -2,14 +2,15 @@ import { Button } from "@mui/material";
 import React, { useState } from "react";
 import { SUBMITFORM, SENDOTP ,VerifyOTP} from "../../../utils/services";
 import Popup from "./popup";
+import { toast } from "react-toastify";
 
 function MyForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [cateogry, setcateogry] = useState("");
-  const [password, setPassword] = useState("");
-  const [repeatPassword, setRepeatPassword] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [repeatPassword, setRepeatPassword] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [birthDay, setBirthDay] = useState("");
   const [birthMonth, setBirthMonth] = useState("");
@@ -31,9 +32,9 @@ function MyForm() {
       form.append("firstname", firstName);
       form.append("lastname", lastName);
       form.append("email", email);
-      form.append("password", password);
+      form.append("password", "Null");
       form.append("mobileNumber", mobileNumber);
-      form.append("dob", birthDay + birthMonth + birthYear);
+      form.append("dob", birthDay +" "+ birthMonth+" " + birthYear);
       form.append("cateogry", cateogry);
       form.append("myfile", researchPaper);
       console.log("hello");
@@ -59,7 +60,7 @@ function MyForm() {
     const MAX_FILE_SIZE = 5120; // 5MB
 
     if (!researchPaper) {
-      alert("Please choose a file");
+      toast.error("Please choose a file");
       setResearchPaper(null);
       setIsSuccess(false);
       return;
@@ -68,13 +69,13 @@ function MyForm() {
     const fileSizeKiloBytes = researchPaper.size / 1024;
 
     if (fileSizeKiloBytes < MIN_FILE_SIZE) {
-      alert("File size is less than minimum limit");
+      toast.error("File size is less than minimum limit");
       setResearchPaper(null);
       setIsSuccess(false);
       return;
     }
     if (fileSizeKiloBytes > MAX_FILE_SIZE) {
-      alert("File size is greater than maximum limit");
+      toast.error("File size is greater than maximum limit");
       setResearchPaper(null);
       setIsSuccess(false);
       return;
@@ -93,22 +94,22 @@ function MyForm() {
     e.preventDefault()
     if(mobileNumber!==""){
     await SENDOTP({ phoneNumber: mobileNumber }).then((res) => {
-      alert(res.res.data)
+      toast.success(res.res.data)
     setshowotp(true)
     });
     }else{
-      alert("enter mobile number")
+      toast.error("enter mobile number")
     }
   };
   const handleverify = async (e) => {
     e.preventDefault()
     if(mobileNumber!==""){
     await VerifyOTP({ phoneNumber: mobileNumber, otp:otp  }).then((res) => {
-      alert(res.res.data)
+      toast.success(res.res.data)
     setverified(true)
-    }).catch(err=>alert(err))
+    }).catch(err=> toast.error(err))
     }else{
-      alert("enter mobile number")
+      toast.error("enter mobile number")
     }
   };
   const [open, setOpen] = React.useState(false);
@@ -147,7 +148,7 @@ function MyForm() {
           />
         </div>
         <br />
-        <div className="password">
+        {/* <div className="password">
           <div>
             <label>Password:</label>
             <input
@@ -166,7 +167,7 @@ function MyForm() {
               onChange={(event) => setRepeatPassword(event.target.value)}
             />
           </div>
-        </div>
+        </div> */}
         <br />
         <div className="mobileotp">
           <label>Mobile Number:</label>
@@ -178,14 +179,14 @@ function MyForm() {
             onBlur={(event) => {
               const regexPattern = /^[0-9]{10}$/; // regular expression pattern
               if (!regexPattern.test(event.target.value)) {
-                alert("Please enter a valid 10-digit mobile number.");
+                toast.error("Please enter a valid 10-digit mobile number.");
                 setMobileNumber(""); // clear the input field
               }
             }}
             required
           />
 
-          <button onClick={handleotp}> Send Otp </button>
+          <button onClick={handleotp}  style={{color: "#cbaa5d"}} > Send Otp </button>
         
         </div>
         {showotp ? (
@@ -194,7 +195,7 @@ function MyForm() {
             <div className="mobileotp">
               <label>OTP:</label>
               <input
-                type="number"
+                type="text"
                 id="otp"
                 name="otp"
                 maxlength="4"
@@ -202,7 +203,7 @@ function MyForm() {
                 value={otp}
                 onChange={(event) => setotp(event.target.value)}
               />
-          <button onClick={handleverify}> Verify Otp </button>
+          <button onClick={handleverify}  style={{color: "#cbaa5d"}} > Verify Otp </button>
 
             </div>
           </>
@@ -249,9 +250,9 @@ function MyForm() {
               onChange={(event) => setBirthYear(event.target.value)}
             >
               <option value="">Year</option>
-              {[...Array(41)].map((_, index) => (
-                <option key={index} value={1983 - index}>
-                  {1983 - index}
+              {[...Array(22)].map((_, index) => (
+                <option key={index} value={1983 + index}>
+                  {1983 + index}
                 </option>
               ))}
             </select>
@@ -259,13 +260,13 @@ function MyForm() {
         </div>
         <br />
         <div>
-          <label>Catagory</label>
+          <label>Category</label>
           <select
             value={cateogry}
             onChange={(event) => setcateogry(event.target.value)}
             required
           >
-            <option value="">Catagory</option>
+            <option value="">Category</option>
             <option value="CLIMATE_CHANGE">CLIMATE CHANGE</option>
             <option value="MONSOON_DYNAMICS">MONSOON DYNAMICS</option>
             <option value="SATELLITE_IMAGERY">SATELLITE IMAGERY</option>
@@ -288,6 +289,7 @@ function MyForm() {
               Upload File
             </Button>
           ) : (
+            <div>
             <Button
               className="nav-button-2"
               style={{ color: "#fff", background: "#11111" }}
@@ -295,6 +297,9 @@ function MyForm() {
             >
               {filename}
             </Button>
+              <button className="cross" style={{color: "#cbaa5d"}} onClick={()=> setResearchPaper(null)}>X</button>
+
+            </div>
           )}
         </div>
         <br />
@@ -306,7 +311,7 @@ function MyForm() {
         </div>
         <br />
         <div>
-          { verified ? (
+          { verified && researchPaper ? (
             <Button
               className="nav-button"
               id="submit-button-2"

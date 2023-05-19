@@ -4,7 +4,10 @@ import Button from "@mui/material/Button";
 import confirm from "../../../Assets/images/confirm.svg";
 import Modal from "@mui/material/Modal";
 import "../../../Assets/css/Popup.css";
+import { useNavigate } from "react-router-dom";
 const Popup = ({ open, handleClose }) => {
+
+  const navigate = useNavigate();
   return (
     <div>
       <Modal
@@ -34,11 +37,8 @@ const Popup = ({ open, handleClose }) => {
               </div>
             </div>
             <div className="center center-button">
-              <Button className="nav-button" id="one" onClick={handleClose}>
+              <Button className="nav-button" id="two" onClick={()=>navigate('/')}>
                 HOMEPAGE
-              </Button>
-              <Button className="nav-button" id="two">
-                VIEW APPLICATION
               </Button>
             </div>
           </div>

@@ -75,6 +75,7 @@
 
 .annual-skymet,
 .annual-skymet2 {
+  padding-top: 7px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 46px;
@@ -344,4 +345,13 @@
     width: 100%;
   }
 
+}
+
+@media screen and (max-width:390px) {
+  .annual-skymet2{
+    line-height: 37px !important;
+  }  
+  .annual-skymet, .annual-skymet2 {
+    margin-bottom: 2% !important;
+  }
 }

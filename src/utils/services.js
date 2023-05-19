@@ -1,8 +1,8 @@
 import axios from "axios";
 import { FORM_ENDPOINT, OTP_ENDPOINT, VERIFY_ENDPOINT } from "./routes";
 
-// export const BASE_URL = "http://192.168.103.250:3000"; //devlopment
-export const BASE_URL = "https://sikka-awards.onrender.com"; //production//
+export const BASE_URL = "https://projects.skymetweather.com/SikkaAPI"; //devlopment
+// export const BASE_URL = "http://localhost:7000"; //production//
 
 
 axios.defaults.baseURL = BASE_URL;

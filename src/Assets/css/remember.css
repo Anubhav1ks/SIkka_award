@@ -34,9 +34,7 @@ color: #111111;
 .div-rec{
     width: 100%;
 }
-.div-rec p{
-    text-align: left;
-}
+
 .div-rec {
     margin-top: 30px;
   position: relative;
@@ -51,12 +49,10 @@ color: #111111;
 .div-rec img{
     margin-top: 20px;
 }
-
-@media screen and (min-width: 1024px){
-    .div-rec p{
-        margin-left: 20%;
-    }
+.div-rec p{
+    margin-bottom: 2rem;
 }
+
 @media screen and (min-width: 1440px) and (max-width: 1690px) {
     .div-rec img:first-child {
         position: absolute;
@@ -97,10 +93,7 @@ color: #111111;
         align-items: center;
     }
     .div-rec{
-        width: 50%;
-    }
-    .div-rec p{
-        text-align: left;
+        width: 100%;
     }
     .div-rec {
         margin-top: 30px;
@@ -194,6 +187,6 @@ color: #111111;
     width: 95%;
 }
 .div-rec img {
-    width: 95% !important;
+    width: 100% !important;
 }
 }

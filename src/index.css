@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 * {
   font: "Roboto" !important;
 }
@@ -78,4 +79,124 @@
   display: none !important;
 }
 
+}
+
+
+
+
+
+.watchvideo {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.watchvideo img {
+  width: 80%;
+  height: 50%;
+}
+
+.video {
+  width: 80%;
+  height: 50%;
+}
+
+/* .watchvideo img {
+  width: 100px !important;
+  height: 100px !important;
+} */
+.watchvideo p {
+  color: #0055a5;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+
+  position: absolute;
+  top: 66%;
+  left: 36%;
+}
+
+.videoplaybutton {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px;
+}
+
+.videoplaybutton:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #cbaa5d;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.videoplaybutton:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #cbaa5d;
+  border-radius: 50%;
+  transition: all 200ms;
+}
+
+.videoplaybutton:hover:after {
+  background-color: darken(#cbaa5d, 10%);
+}
+
+.videoplaybutton img {
+  position: relative;
+  z-index: 3;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.videoplaybutton span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 32px solid #111;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .muted img {
+    max-width: 25px;
+  }
 }

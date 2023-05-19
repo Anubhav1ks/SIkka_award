@@ -1,7 +1,6 @@
-import img from "../../Assets/images/remember-img.png";
-import rec from "../../Assets/images/remember-rec.svg";
-import "../../Assets/css/remember.css";
 
+import "../../Assets/css/remember.css";
+import SectionVideo from "./inner-component/videocomponent"
 const Remember = () => {
   return (
     <>
@@ -18,7 +17,7 @@ const Remember = () => {
               Skymet Weather salutes the soul who made remarkable achievements
               in Indian meteorology. The man who took the stature of meteorology
               to new and unfathomable heights,<span className="color-gold"> Dev Raj Sikka</span>, was undeniably the
-              <span className="color-gold">"Bhishma Pitamah of Indian Meteorology."</span> With grave heart and
+              <span className="color-gold"> "Bhishma Pitamah of Indian Meteorology."</span> With grave heart and
               utmost respect, Skymet Weather assiduously remembers the genius
               behind Indian Meteorology. Known as <span className="color-gold">'Monsoon Man,'</span> Mr. Sikka was
               born on March 01, 1932, in Jhang Maghiana, which is now in Punjab,
@@ -32,11 +31,12 @@ const Remember = () => {
               and Monsoon studies conducted over the Indian Ocean.</span>
             </p>
           </div>
-          <div className="div-rec">
+          {/* <div className="div-rec">
             <img src={img} alt="not found" />
             <img src={rec} alt="not found" />
-          </div>
+          </div> */}
         </div>
+        <SectionVideo/>
       </div>
     </>
   );

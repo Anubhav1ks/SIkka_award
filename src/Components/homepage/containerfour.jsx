@@ -2,8 +2,8 @@ import "../../Assets/css/Four.css";
 import BasicModal from "./inner-component/popup.jsx";
 import React from "react";
 import Yogesh from "../../Assets/images/Yogesh.jpg";
-import Makarand from "../../Assets/images/Makarand.jpg";
-import Jatin from "../../Assets/images/Jatin.jpg";
+import Makarand from "../../Assets/images/M.png";
+import Jatin from "../../Assets/images/Jatin.png";
 import AVM from "../../Assets/images/AVM.jpg";
 
 const FourContainer = () => {
@@ -111,20 +111,16 @@ const FourContainer = () => {
                 <div className="jury-card">
                   <img src={Makarand} alt="not found" />
                   <br />
-                  <span>Makarand Kulkarni</span>
+                  <span>Mahesh Palawat</span>
                   <p>
-                    A veteran and a visionary in agri-weather risk management,
-                    Makarand Kulkarni is leading the development of cutting-edge
-                    technology as the Chief Product Planning & Quality at Skymet
-                    Weather Services Pvt Ltd. Armed with nearly three decades of
-                    extensive research and expertise in predictive analysis,...
+Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Boxer and a keen weather enthusiast who loves to track and predict weather for the betterment of farmers and masses. He has been with Skymet since the initial days of its inception.
                   </p>
                   <div
                     className="read-more"
                     onClick={() =>
                       handleOpen(
-                        "Makarand Kulkarni",
-                        "A veteran and a visionary in agri-weather risk management, Makarand Kulkarni is leading the development of cutting-edge technology as the Chief Product Planning & Quality at Skymet Weather Services Pvt Ltd. Armed with nearly three decades of extensive research and expertise in predictive analysis,",
+                        "Mahesh Palawat",
+                        "Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Boxer and a keen weather enthusiast who loves to track and predict weather for the betterment of farmers and masses. He has been with Skymet since the initial days of its inception.",
                         Makarand
                       )
                     }
@@ -246,20 +242,16 @@ const FourContainer = () => {
               <div className="jury-card">
                 <img src={Makarand} alt="not found" />
                 <br />
-                <span>Makarand Kulkarni</span>
+                <span>Mahesh Palawat</span>
                 <p>
-                  A veteran and a visionary in agri-weather risk management,
-                  Makarand Kulkarni is leading the development of cutting-edge
-                  technology as the Chief Product Planning & Quality at Skymet
-                  Weather Services Pvt Ltd. Armed with nearly three decades of
-                  extensive research and expertise in predictive analysis,...
+Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Boxer and a keen weather enthusiast who loves to track and predict weather for the betterment of farmers and masses. He has been with Skymet since the initial days of its inception.
                 </p>
                 <div
                   className="read-more"
                   onClick={() =>
                     handleOpen(
-                      "Makarand Kulkarni",
-                      "A veteran and a visionary in agri-weather risk management, Makarand Kulkarni is leading the development of cutting-edge technology as the Chief Product Planning & Quality at Skymet Weather Services Pvt Ltd. Armed with nearly three decades of extensive research and expertise in predictive analysis,",
+                      "Mahesh Palawat",
+                      "Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Boxer and a keen weather enthusiast who loves to track and predict weather for the betterment of farmers and masses. He has been with Skymet since the initial days of its inception.",
                       Makarand
                     )
                   }

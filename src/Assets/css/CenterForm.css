@@ -121,6 +121,16 @@
   margin-right: 10px;
 }
 
+.cross{
+  position: relative;
+  right: 9%;
+  font-size: large;
+  background: none !important;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
 
 /* brand-logo */
 
