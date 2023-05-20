@@ -25,7 +25,7 @@ const Home = () => {
                        <li><a href="#legacy" className="anchor">The Legacy of Sikka</a></li>
                        <li><a href="#register" className="anchor">How to Register</a></li>
                        <li><a href="#rules" className="anchor">Rules & Rewards</a></li>
-                       <li><a href="#jury" className="anchor">JURY</a></li>
+                       <li><a href="#jury" className="anchor">Jury</a></li>
                        <li><a href="#faq" className="anchor">FAQs</a></li>
                    </ul>
    

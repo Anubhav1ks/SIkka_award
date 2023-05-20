@@ -36,6 +36,24 @@ const FAQmain = () => {
       question:
         "When will the winner of Skymet Sikka Award be announced?",
       answer: "The winner of Skymet Sikka Award will be announced on 3rd June 2023.",
+      open: false,
+    },
+    {
+      question:
+        "What is the prize for winning Skymet Sikka Award?",
+      answer: "The winning prize for Skymet Sikka Award is Rs. 1,00,000",
+      open: false,
+    },
+        {
+      question:
+        "What is the category for Skymet Sikka Award?",
+      answer: "The Skymet Sikka Award only has 1 category that is Monsoon Dynamics & Predictions",
+      open: false,
+    },
+        {
+      question:
+        "When will the winner of the Skymet Sikka Award be announced?",
+      answer: "The winner of Skymet Sikka Award will be announced on 3rd June 2023",
       open: true,
     },
     

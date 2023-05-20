@@ -149,7 +149,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1690px){
+@media screen and (min-width: 668px) and (max-width: 1690px){
   .hr-with-image-1 {
     margin-left: 22%;
   }
@@ -170,7 +170,7 @@
 
 
 
-@media screen and (max-width: 550px) and (max-width: 1690px){
+@media screen and (max-width: 667px) and (max-width: 1690px){
 
 
 .hr-with-image-1 {

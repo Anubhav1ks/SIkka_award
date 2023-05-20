@@ -3,7 +3,7 @@ import Home from "../../Components/homepage";
 import FourContainer from "../../Components/homepage/containerfour";
 import FAQmain from "../../Components/homepage/fivecontainer";
 import FooterMain from "../../Components/homepage/Footer-home";
-import Categories from "../../Components/homepage/inner-component/categories";
+// import Categories from "../../Components/homepage/inner-component/categories";
 import Centerpage from "../../Components/homepage/inner-component/centerpage";
 import Starhr from "../../Assets/images/Starhr.svg";
 import Howtoregister from "../../Components/homepage/Howtoregister";
@@ -12,6 +12,7 @@ import Remember from "../../Components/homepage/remember";
 
 import Floatingbutton from "../../Components/homepage/Floatingbutton";
 import { Helmet } from 'react-helmet';
+import Category from '../../Components/homepage/inner-component/catagories2';
 
 const HOMEPAGE = () => {
   const [showBtn, setShowBtn] = useState(false);
@@ -60,7 +61,7 @@ const HOMEPAGE = () => {
                     <hr className="main-hr-1" />
                     <img src={Starhr} className="starthr" alt="start" />
                 </div>
-        <Categories />
+        <Category />
 
         </div>
 

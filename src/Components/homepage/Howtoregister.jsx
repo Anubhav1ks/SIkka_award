@@ -76,13 +76,9 @@ const Howtoregister = () => {
             <div>
               <span className="heading">REWARDS</span>
               <ul>
-                <li>
+                <li style={{"listStyle":"none"}}>
                   The winner will receive the Skymet Sikka Award Trophy and a
                   prize money of Rs. 1,00,000/-.
-                </li>
-                <li>
-                  {" "}
-                  All applicants will receive a participation certificate.
                 </li>
               </ul>
             </div>

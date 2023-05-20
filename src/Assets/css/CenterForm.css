@@ -262,7 +262,7 @@ height: 48px;
 }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1690px) {
+@media screen and (min-width: 668px) and (max-width: 1690px) {
 
   
 .form-container input[type="text"], .form-container input[type="email"], .form-container input[type="tel"], .form-container input[type="password"], .form-container input[type="file"] {
@@ -311,7 +311,7 @@ height: 48px;
 }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1690px) {
+@media screen and (min-width: 668px) and (max-width: 1690px) {
 
   
 .form-container input[type="text"], .form-container input[type="email"], .form-container input[type="tel"], .form-container input[type="password"], .form-container input[type="file"] {
@@ -360,7 +360,7 @@ height: 48px;
 }
 }
 
-@media screen and (max-width: 550px) and (max-width: 1690px) {
+@media screen and (max-width: 667px) and (max-width: 1690px) {
   .form-container label {
     font-style: normal;
     font-weight: 500;

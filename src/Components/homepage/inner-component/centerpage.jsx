@@ -1,6 +1,6 @@
 import logo1 from "../../../Assets/images/logo-1.png"
 import "../../../Assets/css/CenterForm.css"
-import circle2 from "../../../Assets/images/gp-1.png"
+import circle2 from "../../../Assets/images/Last-Date.png"
 import { Button } from "@mui/material"
 import { useNavigate } from "react-router-dom";
 

@@ -5,6 +5,7 @@ import Yogesh from "../../Assets/images/Yogesh.jpg";
 import Makarand from "../../Assets/images/M.png";
 import Jatin from "../../Assets/images/Jatin.png";
 import AVM from "../../Assets/images/AVM.jpg";
+import MK from "../../Assets/images/MK.png";
 
 const FourContainer = () => {
   const [title, settitle] = React.useState("");
@@ -51,6 +52,10 @@ const FourContainer = () => {
                 data-target="#carouselExampleIndicators"
                 data-slide-to="3"
               ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="4"
+              ></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -59,9 +64,9 @@ const FourContainer = () => {
                   <br />
                   <span>Jatin Singh</span>
                   <p>
-                    The Founder & Chairman at Skymet Weather Services
-                    Pvt Ltd, he is in charge of the overall growth strategy of
-                    the company, technology innovation, operations and business
+                    The Founder & Chairman at Skymet Weather Services Pvt Ltd,
+                    he is in charge of the overall growth strategy of the
+                    company, technology innovation, operations and business
                     dimensions. Prior to becoming an entrepreneur, Jatin was
                     associated with TV Today Group as an Assistant Producer and
                     anchor...
@@ -113,7 +118,11 @@ const FourContainer = () => {
                   <br />
                   <span>Mahesh Palawat</span>
                   <p>
-Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Boxer and a keen weather enthusiast who loves to track and predict weather for the betterment of farmers and masses. He has been with Skymet since the initial days of its inception.
+                    Mr. Palawat, Vice President, Meteorology & Climate Change is
+                    an Ex Air Force Boxer and a keen weather enthusiast who
+                    loves to track and predict weather for the betterment of
+                    farmers and masses. He has been with Skymet since the
+                    initial days of its inception.
                   </p>
                   <div
                     className="read-more"
@@ -157,6 +166,32 @@ Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Box
                   </div>
                 </div>
               </div>
+
+              <div class="carousel-item">
+                <div className="jury-card">
+                  <img src={MK} alt="not found" />
+                  <br />
+                  <span>Dr. Makarand Kulkarni</span>
+                  <p>
+                    A veteran and a visionary in agri-weather risk management,
+                    Makarand Kulkarni is leading the development of cutting edge
+                    technology as the Chief Product Planning & Quality at Skymet
+                    Weather Services Pvt Ltd. ...
+                  </p>
+                  <div
+                    className="read-more"
+                    onClick={() =>
+                      handleOpen(
+                        "Dr. Makarand Kulkarni",
+                        "A veteran and a visionary in agri-weather risk management, Makarand Kulkarni is leading the development of cutting edge technology as the Chief Product Planning & Quality at Skymet Weather Services Pvt Ltd. Armed with nearly three decades of extensive research and expertise in predictive analysis, risk modeling, time series forecasting, weather prediction and crop yield modeling, Makarand has successfully, applied multi-model ensemble technique to generate seasonal forecast for Indian region, thereby connecting it with better crop yield. A celebrated and respected authority in his field, Dr. Kulkarni, has been instrumental in the development and application of extended range forecast system for climate risk management in agriculture as well as the creation of a dynamic climatological study of precipitation over Maharashtra using conventional and remote sensed data.",
+                        Jatin
+                      )
+                    }
+                  >
+                    Read More
+                  </div>
+                </div>
+              </div>
             </div>
             <a
               class="carousel-control-prev"
@@ -193,12 +228,11 @@ Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Box
                 <br />
                 <span>Jatin Singh</span>
                 <p>
-                  The Founder & Chairman at Skymet Weather Services Pvt
-                  Ltd, he is in charge of the overall growth strategy of the
-                  company, technology innovation, operations and business
-                  dimensions. Prior to becoming an entrepreneur, Jatin was
-                  associated with TV Today Group as an Assistant Producer and
-                  anchor...
+                  The Founder & Chairman at Skymet Weather Services Pvt Ltd, he
+                  is in charge of the overall growth strategy of the company,
+                  technology innovation, operations and business dimensions.
+                  Prior to becoming an entrepreneur, Jatin was associated with
+                  TV Today Group as an Assistant ...
                 </p>
                 <div
                   className="read-more"
@@ -206,6 +240,29 @@ Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Box
                     handleOpen(
                       "Jatin Singh",
                       "The Founder & Chairman at Skymet Weather Services Pvt Ltd, he is in charge of the overall growth strategy of the company, technology innovation, operations and business dimensions. Prior to becoming an entrepreneur, Jatin was associated with TV Today Group as an Assistant Producer and anchor. Before joining the group, he was a reporter with ANI/Reuters handling multiple verticals such as National Broadcasting Corporation (New Delhi and Jammu & Kashmir) and a news bulletin carried in the United States, the South Asian Newsline. He was also an Associate Producer for the Singapore-based 24-hour news network Channel News Asia.",
+                      Jatin
+                    )
+                  }
+                >
+                  Read More
+                </div>
+              </div>
+              <div className="jury-card">
+                <img src={MK} alt="not found" />
+                <br />
+                <span>Dr. Makarand Kulkarni</span>
+                <p>
+                  A veteran and a visionary in agri-weather risk management,
+                  Makarand Kulkarni is leading the development of cutting edge
+                  technology as the Chief Product Planning & Quality at Skymet
+                  Weather Services Pvt Ltd. ...
+                </p>
+                <div
+                  className="read-more"
+                  onClick={() =>
+                    handleOpen(
+                      "Dr. Makarand Kulkarni",
+                      "A veteran and a visionary in agri-weather risk management, Makarand Kulkarni is leading the development of cutting edge technology as the Chief Product Planning & Quality at Skymet Weather Services Pvt Ltd. Armed with nearly three decades of extensive research and expertise in predictive analysis, risk modeling, time series forecasting, weather prediction and crop yield modeling, Makarand has successfully, applied multi-model ensemble technique to generate seasonal forecast for Indian region, thereby connecting it with better crop yield. A celebrated and respected authority in his field, Dr. Kulkarni, has been instrumental in the development and application of extended range forecast system for climate risk management in agriculture as well as the creation of a dynamic climatological study of precipitation over Maharashtra using conventional and remote sensed data.",
                       Jatin
                     )
                   }
@@ -244,7 +301,11 @@ Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Box
                 <br />
                 <span>Mahesh Palawat</span>
                 <p>
-Mr. Palawat, Vice President, Meteorology & Climate Change is an Ex Air Force Boxer and a keen weather enthusiast who loves to track and predict weather for the betterment of farmers and masses. He has been with Skymet since the initial days of its inception.
+                  Mr. Palawat, Vice President, Meteorology & Climate Change is
+                  an Ex Air Force Boxer and a keen weather enthusiast who loves
+                  to track and predict weather for the betterment of farmers and
+                  masses. He has been with Skymet since the initial days of its
+                  inception.
                 </p>
                 <div
                   className="read-more"

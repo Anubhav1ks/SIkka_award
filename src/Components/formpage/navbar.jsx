@@ -16,7 +16,7 @@ const Navbar =()=>{
                        <li><a href="#REMEMBERING" className="anchor">The Legacy of Sikka</a></li>
                        <li><a href="#REGISTER" className="anchor">How to Register</a></li>
                        <li><a href="#REWARDS" className="anchor">Rules & Rewards</a></li>
-                       <li><a href="#JURY" className="anchor">JURY</a></li>
+                       <li><a href="#JURY" className="anchor">Jury</a></li>
                    </ul>
    
                </div>

@@ -1,8 +1,5 @@
 .categories-div {
   margin-top: 90px;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 70px;
 }
 .categories-div .heading {
   margin-bottom: 50px;
@@ -123,7 +120,7 @@
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1690px) {
+@media screen and (min-width: 668px) and (max-width: 1690px) {
 
 .Card-categories {
     margin-right: 11px;
@@ -230,7 +227,7 @@
   
 
 
-@media screen and (max-width: 550px) and (max-width: 1690px) {
+@media screen and (max-width: 667px) and (max-width: 1690px) {
   .Card-categories {
     margin-right: 15%;
     padding: 15px;
@@ -258,7 +255,39 @@
   }
 .categories-div {
   margin-top: 90px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 }
+
+
+/* new  */
+
+.main-new-hr {
+width: 140px;
+height: 1px;
+background-color: #CBAA5D;
+
+}
+.new-main{
+  display: flex;
+  width: 100%;
+}
+.new-main div{
+  width: 40%;
+}
+.new-main p{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+text-align: left;
+
+color: #ECECEC;
+}
+.cropped-ofp {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover;
+  object-position: 25% 25%; 
+  }
